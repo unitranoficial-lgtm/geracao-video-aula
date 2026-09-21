@@ -1,0 +1,33 @@
+{
+  "titulo": "O que é a ANTT?",
+  "assunto": "ANTT - Agência Nacional de Transportes Terrestres",
+  "estilo": "quadro_negro",
+  "voz_elevenlabs": "Will - Deep",
+  "duracao_estimada_minutos": 0.67,
+  "num_takes": 3,
+  "descricao_imagem_coringa": "Quadro negro completamente vazio, sem texto, sem desenhos, sem marcas de giz",
+  "prompt_imagem_coringa": "Clean black chalkboard, completely empty, no text, no drawings, no chalk marks, dark slate surface, classic classroom blackboard, educational setting, 16:9",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Título ANTT em destaque no centro, subtítulo 'Agência Nacional de Transportes Terrestres' abaixo, ícone simples de rodovia desenhado a giz",
+      "prompt_imagem": "Black chalkboard with chalk drawing: large text 'ANTT' centered at top, below it 'Agencia Nacional de Transportes Terrestres' in smaller chalk letters, simple chalk sketch of a highway road below, white chalk on dark background, hand-drawn educational style, 16:9",
+      "prompt_video": "Animate this image starting from a clean black chalkboard, a chalk hand appears holding chalk and writes 'ANTT' in large letters, then writes the subtitle below, then sketches the highway icon, smooth chalk writing motion, chalk dust particles, hand stays in motion frame style, blackboard stays fixed",
+      "narracao": "A ANTT, Agência Nacional de Transportes Terrestres, é uma autarquia federal criada em 2001. Ela é o órgão responsável por regular e fiscalizar o setor de transportes rodoviários e ferroviários em todo o Brasil."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "Título 'O que faz?' sublinhado no topo, três tópicos em lista: 'Regula concessões de rodovias e ferrovias', 'Fiscaliza transporte de passageiros', 'Controla cargas perigosas'",
+      "prompt_imagem": "Black chalkboard with chalk writing: title 'O que faz?' underlined at top, three bullet points in chalk: 'Regula concessoes de rodovias e ferrovias', 'Fiscaliza transporte de passageiros', 'Controla cargas perigosas', white chalk on black, hand-drawn style, simple chalk icons next to each item, 16:9",
+      "prompt_video": "Animate starting from clean black chalkboard, chalk hand appears and writes the title 'O que faz?' with underline, then writes each bullet point one by one with small icons, smooth chalk writing motion, sequential appearance of each item, chalk dust, motion frame style",
+      "narracao": "A ANTT regula as concessões de rodovias e ferrovias federais, fiscaliza o transporte rodoviário de passageiros interestaduais e internacionais, e controla o transporte de cargas perigosas em todo o território nacional."
+    },
+    {
+      "numero": 3,
+      "conteudo_visual": "ANTT em círculo no centro com 4 setas apontando para: Segurança, Qualidade, Tarifas justas, Infraestrutura — mapa mental estilo giz",
+      "prompt_imagem": "Black chalkboard with chalk diagram: 'ANTT' in a circle at center, four arrows pointing outward to four chalk boxes: 'Seguranca', 'Qualidade', 'Tarifas justas', 'Infraestrutura', mind-map style, white chalk on black, hand-drawn educational diagram, 16:9",
+      "prompt_video": "Animate starting from clean black chalkboard, chalk hand draws the center circle with 'ANTT', then draws each arrow and box one by one, smooth chalk drawing motion, each element appears progressively, chalk dust particles, motion frame style",
+      "narracao": "A atuação da ANTT garante segurança nas estradas, qualidade nos serviços e equilíbrio nas tarifas. Beneficiando milhões de brasileiros que utilizam o transporte terrestre todos os dias."
+    }
+  ]
+}
