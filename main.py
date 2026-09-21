@@ -1,162 +1,82 @@
 #!/usr/bin/env python3
 """
 Gerador de Vídeo-Aulas — Unitran
----------------------------------
+
 Uso:
-  python main.py "Direito Trabalhista - Rescisão de Contrato"
-  python main.py "Cálculo - Derivadas" --estilo quadro_negro
-  python main.py "Marketing Digital" --so-roteiro
-  python main.py "Contabilidade Básica" --listar-vozes
+  # Gerar roteiro para aprovação
+  python main.py "aula sobre CLT rescisão de contrato, quadro branco com maozinha, 3 minutos, voz: Rachel"
+
+  # Editar takes já gerados (após baixar do Flow e ElevenLabs)
+  python main.py --editar "C:/Users/UNITRAN/Documents/Geracao video aula/nome-do-video"
 """
 
 import argparse
 import os
 import sys
-import json
-from pathlib import Path
 from dotenv import load_dotenv
 from rich.console import Console
-from rich.panel import Panel
+from rich.prompt import Confirm
 
 load_dotenv()
 
-from src.models import EstiloVisual
-from src.roteiro import gerar_roteiro, salvar_roteiro
-from src.narracao import listar_vozes, exibir_vozes, gerar_narracao_completa
-from src.visual import gerar_videos_completo
-from src.editor import gerar_manifesto
-
 console = Console()
 
-ESTILOS_DISPONIVEIS = {
-    "quadro_branco": EstiloVisual.QUADRO_BRANCO,
-    "quadro_branco_mao": EstiloVisual.QUADRO_BRANCO_MAO,
-    "quadro_negro": EstiloVisual.QUADRO_NEGRO,
-    "animacao_2d": EstiloVisual.ANIMACAO_2D,
-}
+
+def cmd_gerar_roteiro(input_texto: str) -> None:
+    from src.roteiro import gerar_roteiro, exibir_roteiro, salvar_roteiro
+
+    roteiro = gerar_roteiro(input_texto)
+    exibir_roteiro(roteiro)
+
+    if not Confirm.ask("\n[bold yellow]Aprovar este roteiro?[/bold yellow]"):
+        console.print("[red]Roteiro não aprovado. Rode novamente para gerar outro.[/red]")
+        sys.exit(0)
+
+    # Salva na pasta local do projeto
+    nome_pasta = roteiro.titulo.lower().replace(" ", "_").replace("/", "-")[:50]
+    base = os.environ.get("PASTA_PROJETOS", os.path.expanduser("~"))
+    pasta = os.path.join(base, "Geracao video aula", nome_pasta)
+
+    caminho = salvar_roteiro(roteiro, pasta)
+    console.print(f"\n[green]✓[/green] Roteiro aprovado e salvo em: [cyan]{caminho}[/cyan]")
+    console.print("\n[bold]Próximos passos:[/bold]")
+    console.print(f"  1. Abra o Google Flow e crie o projeto: [cyan]{roteiro.titulo}[/cyan]")
+    console.print(f"  2. Gere a imagem coringa: [dim]{roteiro.prompt_imagem_coringa[:80]}...[/dim]")
+    console.print(f"  3. Para cada take, gere 4 imagens → selecione a melhor → gere o vídeo")
+    console.print(f"  4. Gere os áudios no ElevenLabs com a voz [cyan]{roteiro.voz_elevenlabs}[/cyan]")
+    console.print(f"  5. Salve tudo em: [cyan]{pasta}[/cyan]")
+    console.print(f"  6. Rode: [bold]python main.py --editar \"{pasta}\"[/bold]")
+
+
+def cmd_editar(pasta_projeto: str) -> None:
+    from src.editor import editar_projeto
+
+    console.print(f"[bold cyan]Editando projeto:[/bold cyan] {pasta_projeto}")
+
+    # Instala ffmpeg se necessário
+    import shutil
+    if not shutil.which("ffmpeg"):
+        console.print("[yellow]FFmpeg não encontrado. Instalando...[/yellow]")
+        import subprocess
+        subprocess.run(["apt-get", "install", "-y", "-q", "ffmpeg"], check=True)
+
+    video_final = editar_projeto(pasta_projeto)
+    console.print(f"\n[bold green]Concluído![/bold green] Vídeo final: [cyan]{video_final}[/cyan]")
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Gera vídeo-aulas completas para a Unitran",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog=__doc__,
-    )
-    parser.add_argument("assunto", nargs="?", help="Assunto da aula")
-    parser.add_argument(
-        "--estilo",
-        choices=list(ESTILOS_DISPONIVEIS.keys()),
-        default="quadro_branco",
-        help="Estilo visual do vídeo (padrão: quadro_branco)",
-    )
-    parser.add_argument(
-        "--segmentos",
-        type=int,
-        default=6,
-        help="Número aproximado de segmentos (padrão: 6)",
-    )
-    parser.add_argument(
-        "--voice-id",
-        default=os.getenv("ELEVENLABS_VOICE_ID", ""),
-        help="ID da voz ElevenLabs",
-    )
-    parser.add_argument(
-        "--modelo-video",
-        default="veo-3",
-        help="Modelo de vídeo no Kairogen (padrão: veo-3)",
-    )
-    parser.add_argument(
-        "--output",
-        default="output",
-        help="Pasta de saída (padrão: output/)",
-    )
-    parser.add_argument("--so-roteiro", action="store_true", help="Gera apenas o roteiro, sem áudio e vídeo")
-    parser.add_argument("--so-narracao", action="store_true", help="Gera roteiro + narração, sem vídeo")
-    parser.add_argument("--listar-vozes", action="store_true", help="Lista vozes disponíveis no ElevenLabs e sai")
-    parser.add_argument("--roteiro-json", help="Usa um roteiro já gerado (pula etapa 1)")
-
+    parser = argparse.ArgumentParser(description="Gerador de Vídeo-Aulas Unitran")
+    parser.add_argument("input", nargs="?", help="Descrição da aula (assunto, estilo, duração, voz)")
+    parser.add_argument("--editar", metavar="PASTA", help="Edita os takes de um projeto já gerado")
     args = parser.parse_args()
 
-    # --- Listar vozes ---
-    if args.listar_vozes:
-        from elevenlabs import ElevenLabs
-        client = ElevenLabs(api_key=os.environ["ELEVENLABS_API_KEY"])
-        vozes = listar_vozes(client)
-        exibir_vozes(vozes)
-        sys.exit(0)
-
-    if not args.assunto and not args.roteiro_json:
+    if args.editar:
+        cmd_editar(args.editar)
+    elif args.input:
+        cmd_gerar_roteiro(args.input)
+    else:
         parser.print_help()
         sys.exit(1)
-
-    pasta_output = args.output
-    Path(pasta_output).mkdir(parents=True, exist_ok=True)
-
-    console.print(Panel(
-        f"[bold]Gerador de Vídeo-Aulas Unitran[/bold]\n"
-        f"Assunto: [cyan]{args.assunto or 'do roteiro existente'}[/cyan]\n"
-        f"Estilo:  [cyan]{args.estilo}[/cyan]",
-        style="bold blue",
-    ))
-
-    # --- Etapa 1: Roteiro ---
-    if args.roteiro_json:
-        with open(args.roteiro_json, encoding="utf-8") as f:
-            from src.models import Roteiro
-            roteiro = Roteiro.model_validate_json(f.read())
-        roteiro_path = args.roteiro_json
-        console.print(f"[green]✓[/green] Roteiro carregado de: {roteiro_path}")
-    else:
-        estilo = ESTILOS_DISPONIVEIS[args.estilo]
-        roteiro = gerar_roteiro(args.assunto, estilo, args.segmentos)
-        roteiro_path = salvar_roteiro(roteiro, pasta_output)
-
-    if args.so_roteiro:
-        console.print("\n[bold green]Roteiro gerado com sucesso![/bold green]")
-        _imprimir_roteiro(roteiro)
-        sys.exit(0)
-
-    # --- Etapa 2: Narração ---
-    if not args.voice_id:
-        console.print("\n[yellow]⚠ Nenhum ELEVENLABS_VOICE_ID definido.[/yellow]")
-        console.print("Use [bold]--listar-vozes[/bold] para ver as disponíveis, depois:")
-        console.print("  export ELEVENLABS_VOICE_ID=<id>  ou defina no .env\n")
-        sys.exit(1)
-
-    audios = gerar_narracao_completa(roteiro, args.voice_id, pasta_output)
-
-    if args.so_narracao:
-        gerar_manifesto(roteiro_path, audios, [], pasta_output)
-        console.print("\n[bold green]Narração gerada com sucesso![/bold green]")
-        sys.exit(0)
-
-    # --- Etapa 3: Vídeos visuais ---
-    videos = gerar_videos_completo(roteiro, pasta_output, args.modelo_video)
-
-    # --- Etapa 4: Manifesto de edição ---
-    gerar_manifesto(roteiro_path, audios, videos, pasta_output)
-
-    console.print("\n[bold green]✓ Fluxo completo concluído![/bold green]")
-    console.print(f"Arquivos em: [cyan]{os.path.abspath(pasta_output)}[/cyan]")
-
-
-def _imprimir_roteiro(roteiro) -> None:
-    from rich.table import Table
-    console.print(f"\n[bold]{roteiro.titulo_aula}[/bold]")
-    console.print(f"Objetivos: {', '.join(roteiro.objetivos_aprendizagem)}\n")
-    table = Table(show_lines=True)
-    table.add_column("#", width=3)
-    table.add_column("Segmento")
-    table.add_column("Duração")
-    table.add_column("Narração (início)", width=50)
-    for s in roteiro.segmentos:
-        table.add_row(
-            str(s.id),
-            s.titulo,
-            f"{s.duracao_estimada_segundos}s",
-            s.narracao[:80] + "...",
-        )
-    console.print(table)
 
 
 if __name__ == "__main__":

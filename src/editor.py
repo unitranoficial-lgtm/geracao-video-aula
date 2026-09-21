@@ -1,85 +1,135 @@
-"""Etapa 4: Geração do manifesto de edição e instruções de sincronização."""
+"""Etapa 4: Edição com FFmpeg — sincroniza vídeos e áudios de cada take e concatena tudo."""
 
-import json
 import os
+import subprocess
+from pathlib import Path
 from rich.console import Console
-from rich.panel import Panel
-from rich.table import Table
 
 console = Console()
 
 
-def gerar_manifesto(
-    roteiro_path: str,
-    audios: list[dict],
-    videos: list[dict],
-    pasta_output: str,
-) -> str:
+def _run(cmd: list[str]) -> None:
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    if result.returncode != 0:
+        raise RuntimeError(f"FFmpeg error:\n{result.stderr}")
+
+
+def get_duracao(arquivo: str) -> float:
+    """Retorna a duração de um arquivo de áudio ou vídeo em segundos."""
+    result = subprocess.run(
+        ["ffprobe", "-v", "quiet", "-show_entries", "format=duration",
+         "-of", "csv=p=0", arquivo],
+        capture_output=True, text=True
+    )
+    return float(result.stdout.strip())
+
+
+def processar_take(
+    video_path: str,
+    audio_path: str,
+    output_path: str,
+    pasta_temp: str,
+) -> None:
     """
-    Gera um manifesto JSON com a ordem de edição:
-    cada segmento com seu arquivo de vídeo, arquivo de áudio e duração.
+    Para um take:
+    1. Remove o áudio original do vídeo
+    2. Estende o último frame até cobrir a duração do áudio
+    3. Sincroniza o áudio do ElevenLabs
     """
-    segmentos_edicao = []
+    Path(pasta_temp).mkdir(parents=True, exist_ok=True)
 
-    audio_map = {a["id"]: a for a in audios}
-    video_map = {v["id"]: v for v in videos}
+    duracao_video = get_duracao(video_path)
+    duracao_audio = get_duracao(audio_path)
 
-    for seg_id in sorted(audio_map.keys()):
-        audio = audio_map.get(seg_id, {})
-        video = video_map.get(seg_id, {})
-        segmentos_edicao.append({
-            "ordem": seg_id,
-            "titulo": audio.get("titulo", video.get("titulo", f"Segmento {seg_id}")),
-            "audio": audio.get("caminho_audio", ""),
-            "video": video.get("caminho_video", ""),
-            "duracao_segundos": audio.get("duracao_estimada", video.get("duracao_estimada", 60)),
-        })
+    nome_base = Path(video_path).stem
+    video_sem_audio = os.path.join(pasta_temp, f"{nome_base}_mudo.mp4")
+    ultimo_frame = os.path.join(pasta_temp, f"{nome_base}_last_frame.png")
+    extensao = os.path.join(pasta_temp, f"{nome_base}_extensao.mp4")
+    video_estendido = os.path.join(pasta_temp, f"{nome_base}_estendido.mp4")
+    lista_concat = os.path.join(pasta_temp, f"{nome_base}_concat.txt")
 
-    manifesto = {
-        "roteiro": roteiro_path,
-        "total_segmentos": len(segmentos_edicao),
-        "duracao_total_estimada": sum(s["duracao_segundos"] for s in segmentos_edicao),
-        "segmentos": segmentos_edicao,
-        "instrucoes_edicao": [
-            "1. Importe todos os arquivos de vídeo e áudio no editor",
-            "2. Para cada segmento: coloque o vídeo na track de vídeo e o áudio na track de áudio",
-            "3. Ajuste o tempo do vídeo para corresponder à duração do áudio",
-            "4. Se necessário, adicione transições entre segmentos (fade recomendado)",
-            "5. Adicione intro e outro da Unitran no início e final",
-            "6. Exporte em MP4 H.264, resolução 1920x1080, 30fps",
-        ],
-    }
+    # Remove áudio original
+    _run(["ffmpeg", "-y", "-i", video_path, "-an", "-c:v", "copy", video_sem_audio])
 
-    caminho = os.path.join(pasta_output, "manifesto_edicao.json")
-    with open(caminho, "w", encoding="utf-8") as f:
-        json.dump(manifesto, f, indent=2, ensure_ascii=False)
+    if duracao_audio > duracao_video:
+        extensao_segundos = duracao_audio - duracao_video
 
-    _exibir_manifesto(manifesto)
-    console.print(f"\n[green]✓[/green] Manifesto salvo: [cyan]{caminho}[/cyan]")
+        # Extrai último frame
+        _run(["ffmpeg", "-y", "-sseof", "-0.5", "-i", video_sem_audio,
+              "-frames:v", "1", "-q:v", "2", ultimo_frame])
 
-    return caminho
+        # Cria vídeo estático do último frame com a duração da extensão
+        _run(["ffmpeg", "-y", "-loop", "1", "-i", ultimo_frame,
+              "-t", str(extensao_segundos),
+              "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "24", extensao])
+
+        # Concatena vídeo original + extensão
+        with open(lista_concat, "w") as f:
+            f.write(f"file '{os.path.abspath(video_sem_audio)}'\n")
+            f.write(f"file '{os.path.abspath(extensao)}'\n")
+
+        _run(["ffmpeg", "-y", "-f", "concat", "-safe", "0",
+              "-i", lista_concat, "-c:v", "libx264", "-pix_fmt", "yuv420p", video_estendido])
+
+        video_para_usar = video_estendido
+    else:
+        video_para_usar = video_sem_audio
+
+    # Sincroniza áudio do ElevenLabs
+    _run(["ffmpeg", "-y", "-i", video_para_usar, "-i", audio_path,
+          "-c:v", "copy", "-c:a", "aac", "-map", "0:v:0", "-map", "1:a:0",
+          "-shortest", output_path])
 
 
-def _exibir_manifesto(manifesto: dict) -> None:
-    table = Table(title="Manifesto de Edição", show_lines=True)
-    table.add_column("#", style="cyan", width=3)
-    table.add_column("Segmento", style="bold")
-    table.add_column("Áudio", style="green")
-    table.add_column("Vídeo", style="blue")
-    table.add_column("Duração", justify="right")
+def concatenar_takes(takes_paths: list[str], output_path: str, pasta_temp: str) -> None:
+    """Concatena todos os takes em um único vídeo final."""
+    lista = os.path.join(pasta_temp, "takes_finais.txt")
+    with open(lista, "w") as f:
+        for path in takes_paths:
+            f.write(f"file '{os.path.abspath(path)}'\n")
 
-    for s in manifesto["segmentos"]:
-        table.add_row(
-            str(s["ordem"]),
-            s["titulo"],
-            os.path.basename(s["audio"]) if s["audio"] else "—",
-            os.path.basename(s["video"]) if s["video"] else "—",
-            f"{s['duracao_segundos']}s",
-        )
+    _run(["ffmpeg", "-y", "-f", "concat", "-safe", "0",
+          "-i", lista, "-c", "copy", output_path])
 
-    console.print(table)
-    console.print(Panel(
-        "\n".join(manifesto["instrucoes_edicao"]),
-        title="Instruções de Edição",
-        style="yellow",
-    ))
+
+def editar_projeto(pasta_projeto: str) -> str:
+    """
+    Processa todos os takes de um projeto e gera o vídeo final.
+
+    Espera encontrar na pasta:
+      take_1.mp4, take_2.mp4, ...
+      audio_take_1.mp3, audio_take_2.mp3, ...
+
+    Gera: video_final.mp4
+    """
+    pasta_temp = os.path.join(pasta_projeto, "_temp")
+    takes_finais = []
+
+    # Descobre quantos takes existem
+    i = 1
+    while True:
+        video = os.path.join(pasta_projeto, f"take_{i}.mp4")
+        audio = os.path.join(pasta_projeto, f"audio_take_{i}.mp3")
+        if not os.path.exists(video):
+            break
+        if not os.path.exists(audio):
+            raise FileNotFoundError(f"Áudio não encontrado: {audio}")
+
+        output_take = os.path.join(pasta_projeto, f"take_{i}_editado.mp4")
+
+        with console.status(f"Processando take {i}..."):
+            processar_take(video, audio, output_take, pasta_temp)
+
+        console.print(f"[green]✓[/green] Take {i} editado: [cyan]{output_take}[/cyan]")
+        takes_finais.append(output_take)
+        i += 1
+
+    if not takes_finais:
+        raise FileNotFoundError("Nenhum take encontrado na pasta.")
+
+    video_final = os.path.join(pasta_projeto, "video_final.mp4")
+    with console.status("Concatenando todos os takes..."):
+        concatenar_takes(takes_finais, video_final, pasta_temp)
+
+    console.print(f"\n[bold green]✓ Vídeo final:[/bold green] [cyan]{video_final}[/cyan]")
+    return video_final
