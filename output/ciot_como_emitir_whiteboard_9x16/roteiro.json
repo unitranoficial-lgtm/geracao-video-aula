@@ -1,0 +1,54 @@
+{
+  "titulo": "O que é o CIOT e como emitir corretamente",
+  "assunto": "Explicação prática sobre o CIOT e os cuidados para sua emissão conforme as regras atuais da ANTT",
+  "estilo": "whiteboard_mao_desenhando",
+  "voz_elevenlabs": "Elvis",
+  "duracao_estimada_minutos": 1.0,
+  "num_takes": 6,
+  "descricao_imagem_coringa": "Fundo branco puro, uniforme e completamente vazio.",
+  "prompt_imagem_coringa": "Uniform pure #FFFFFF full-screen background filling every pixel of a vertical 9:16 image. Completely empty canvas. No board, frame, paper edges, shadows, texture, objects, hands, drawings, text or logos.",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Caminhão, documento e o título O QUE É O CIOT? concluídos sobre fundo branco.",
+      "prompt_imagem": "Final completed frame of a colorful marker-style whiteboard explainer on a uniform pure #FFFFFF full-screen background, vertical 9:16. Show a friendly blue cargo truck connected by an arrow to a document with a green check. Exact large Brazilian Portuguese text: 'O QUE É O CIOT?'. Smaller exact text: 'CÓDIGO DA OPERAÇÃO'. Clean marker lines with blue, green and orange accents, generous mobile-safe margins. No physical whiteboard, no frame, no paper edges, no scenery, no English text. No hand, fingers, arm, person, marker or pen visible in the final frame.",
+      "prompt_video": "Start from the supplied completely blank pure white frame. A realistic human hand holding a black marker enters and progressively draws the blue cargo truck, arrow, document and green check, stroke by stroke. The hand then writes the exact Portuguese text O QUE É O CIOT? and CÓDIGO DA OPERAÇÃO. Natural quick whiteboard drawing motion, colorful marker accents, fixed pure #FFFFFF background, vertical 9:16. The hand, arm and marker exit completely before the last frame; end exactly on the supplied completed artwork with no hand visible. No English text and no physical board frame.",
+      "narracao": "CIOT significa Código Identificador da Operação de Transporte. É o registro que identifica cada operação de transporte rodoviário remunerado de cargas perante a ANTT."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "Ficha concluída com contratante, transportador, veículo, carga, rota e frete.",
+      "prompt_imagem": "Final completed frame of a colorful marker-style whiteboard infographic on a uniform pure #FFFFFF full-screen background, vertical 9:16. Show a central form titled exactly 'DADOS DA OPERAÇÃO'. Around it are simple icons with exact Portuguese labels: 'CONTRATANTE', 'TRANSPORTADOR', 'VEÍCULO', 'CARGA', 'ORIGEM E DESTINO', 'VALOR DO FRETE'. Blue arrows connect the icons to the form. Clean black marker outlines with blue, green and orange accents, high legibility, no English text, no board or frame. No hand, fingers, arm, person, marker or pen visible in the final frame.",
+      "prompt_video": "Start from the supplied completely blank pure white frame. A realistic hand rapidly draws the form and each icon one by one, writes the exact Portuguese labels CONTRATANTE, TRANSPORTADOR, VEÍCULO, CARGA, ORIGEM E DESTINO and VALOR DO FRETE, then connects them with blue marker arrows. Authentic progressive whiteboard drawing, fixed pure white background, vertical 9:16, no English text. The hand, arm and marker exit completely before the last frame; end exactly on the supplied completed artwork with no hand visible.",
+      "narracao": "Para gerar o código, informe corretamente o contratante, o transportador, os veículos, a carga, a origem, o destino, as datas, o valor do frete e a forma de pagamento."
+    },
+    {
+      "numero": 3,
+      "conteudo_visual": "Dois caminhos concluídos: contratação de TAC e operação realizada por ETC.",
+      "prompt_imagem": "Final completed frame of a clear marker-style whiteboard decision diagram on a uniform pure #FFFFFF full-screen background, vertical 9:16. Exact Portuguese heading: 'QUEM DEVE EMITIR?'. Left path: a person icon and small truck labeled 'TAC OU EQUIPARADO', arrow from a building labeled 'CONTRATANTE'. Add exact text 'POR INSTITUIÇÃO DE PAGAMENTO'. Right path: a transport company and truck labeled 'ETC QUE REALIZA O TRANSPORTE'. Clean marker illustration, black outlines with blue and green accents, no English text, no frame or scenery. No hand, fingers, arm, person, marker or pen visible in the final frame; the person may appear only as a simple infographic icon.",
+      "prompt_video": "Start from blank pure white. A realistic marker hand draws the heading QUEM DEVE EMITIR?, then the two decision paths. On the left it draws CONTRATANTE pointing to TAC OU EQUIPARADO and writes POR INSTITUIÇÃO DE PAGAMENTO. On the right it draws ETC QUE REALIZA O TRANSPORTE. Smooth progressive whiteboard animation, readable Portuguese only, vertical 9:16. The hand, arm and marker exit completely before the last frame; end exactly on the supplied completed artwork with no hand visible.",
+      "narracao": "Quando o contratado é TAC ou equiparado, quem contrata registra a operação por uma instituição de pagamento autorizada. Se uma ETC realiza o transporte, a responsabilidade segue a regra aplicável à empresa executora."
+    },
+    {
+      "numero": 4,
+      "conteudo_visual": "Instituição de pagamento, integração com a ANTT e certificado digital concluídos.",
+      "prompt_imagem": "Final completed frame of a colorful marker-style whiteboard explainer on uniform pure #FFFFFF, vertical 9:16. Exact title: 'COMO GERAR?'. Show two clean paths toward a document labeled 'CIOT': first an icon labeled 'INSTITUIÇÃO DE PAGAMENTO'; second a company computer labeled 'INTEGRAÇÃO COM A ANTT' with a small certificate icon labeled 'CERTIFICADO DIGITAL'. Finish with a green check. Black marker lines with blue green and orange highlights, Portuguese text only, no physical board or frame. No hand, fingers, arm, person, marker or pen visible in the final frame.",
+      "prompt_video": "Start from the supplied blank white frame. A realistic hand draws the title COMO GERAR?, then sketches INSTITUIÇÃO DE PAGAMENTO and a second route named INTEGRAÇÃO COM A ANTT with CERTIFICADO DIGITAL. Both arrows lead to a CIOT document and a green check is drawn last. Fast clean marker animation, fixed pure white, Portuguese only, vertical 9:16. The hand, arm and marker exit completely before the last frame; end exactly on the supplied completed artwork with no hand visible.",
+      "narracao": "A emissão pode ser feita por uma instituição de pagamento habilitada. A ETC também pode usar integração com a ANTT nas operações que ela própria realiza, seguindo os requisitos técnicos e usando certificado digital válido."
+    },
+    {
+      "numero": 5,
+      "conteudo_visual": "Relógio antes da partida e ligação do CIOT ao MDF-e concluídos.",
+      "prompt_imagem": "Final completed marker-style whiteboard frame on uniform pure #FFFFFF, vertical 9:16. Show a truck stopped behind a start line, a clock and a green check. Exact Portuguese heading: 'ANTES DE INICIAR A VIAGEM'. Below, show two linked documents labeled exactly 'CIOT' and 'MDF-e', with the small exact phrase 'VINCULE QUANDO APLICÁVEL'. Clean marker illustration with blue, green and orange accents, no English text, no board frame. No hand, fingers, arm, person, marker or pen visible in the final frame.",
+      "prompt_video": "Begin with the supplied empty pure white frame. A realistic hand draws the stopped truck, starting line, clock and green check, then writes ANTES DE INICIAR A VIAGEM. The hand draws documents CIOT and MDF-e and links them with an arrow, finishing with VINCULE QUANDO APLICÁVEL. Progressive whiteboard drawing, Portuguese only, vertical 9:16. The hand, arm and marker exit completely before the last frame; end exactly on the supplied completed artwork with no hand visible.",
+      "narracao": "O CIOT deve ser gerado antes do início da operação. Quando houver MDF-e aplicável, vincule o código ao documento correspondente e confira se o transportador está ativo no RNTRC."
+    },
+    {
+      "numero": 6,
+      "conteudo_visual": "Checklist final concluído com quatro cuidados para emissão correta.",
+      "prompt_imagem": "Final completed colorful marker-style whiteboard checklist on uniform pure #FFFFFF, vertical 9:16. Exact Portuguese title: 'EMITA SEM ERROS'. Four large checked items with exact text: 'DADOS CORRETOS', 'PISO MÍNIMO CONFERIDO', 'CIOT ANTES DA VIAGEM', 'CÓDIGO VINCULADO'. Add a small blue truck and green shield at the bottom. Clean black marker strokes with blue green and orange accents, highly legible, no English text, no frame or paper texture. No hand, fingers, arm, person, marker or pen visible in the final frame.",
+      "prompt_video": "Start from blank pure white. A realistic hand writes EMITA SEM ERROS, draws four checklist boxes and checks them while writing DADOS CORRETOS, PISO MÍNIMO CONFERIDO, CIOT ANTES DA VIAGEM and CÓDIGO VINCULADO. Finish by drawing a small blue truck and green shield. Energetic progressive marker animation, Portuguese only, vertical 9:16. The hand, arm and marker exit completely before the last frame; end exactly on the supplied completed artwork with no hand visible.",
+      "narracao": "Para evitar problemas, revise os dados, confira o piso mínimo quando aplicável, gere o código antes da viagem e guarde o registro da operação. Em caso de dúvida, procure orientação especializada."
+    }
+  ]
+}

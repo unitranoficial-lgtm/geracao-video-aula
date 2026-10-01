@@ -1,0 +1,40 @@
+{
+  "titulo": "IBS e CBS para o Transportador",
+  "assunto": "Reforma Tributária — IBS e CBS no setor de transporte",
+  "estilo": "quadro_negro",
+  "voz_elevenlabs": "Elvis - Resonating, Deep and Engaging",
+  "duracao_estimada_segundos": 40,
+  "num_takes": 4,
+  "descricao_imagem_coringa": "Quadro negro completamente vazio, sem texto, sem desenhos, sem marcas de giz",
+  "prompt_imagem_coringa": "Clean black chalkboard, completely empty, no text, no drawings, no chalk marks, dark slate surface, classic classroom blackboard, educational setting, 16:9",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Título 'IBS e CBS' em destaque no centro, subtítulo 'A Reforma Tributária para o Transporte' abaixo, ícone de caminhão desenhado a giz na parte inferior",
+      "prompt_imagem": "Black chalkboard with chalk drawing: large bold text 'IBS e CBS' centered at top, below it 'A Reforma Tributaria para o Transporte' in smaller chalk letters, simple chalk sketch of a truck at bottom center, white chalk on dark blackboard, hand-drawn educational style, no hands visible, 16:9",
+      "prompt_video": "Animate on black chalkboard: the text 'IBS e CBS' appears progressively drawn in chalk at top, then subtitle text draws itself below, then truck sketch outlines itself in chalk at bottom, each element appears as if drawn by invisible chalk, chalk dust particles, no hand visible, smooth progressive appearance, 16:9",
+      "narracao": "A Reforma Tributária criou dois novos tributos: o IBS, Imposto sobre Bens e Serviços, e o CBS, Contribuição sobre Bens e Serviços. Para o transportador, esses tributos substituem o ICMS, o PIS e o COFINS."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "Diagrama de substituição em dois blocos: bloco esquerdo com 'ICMS + ISS' e seta para 'IBS'; bloco inferior com 'PIS + COFINS' e seta para 'CBS'; estilo quadro negro com giz",
+      "prompt_imagem": "Black chalkboard with chalk diagram: left box with 'ICMS + ISS' in chalk, chalk arrow pointing right to larger box 'IBS'; below, box with 'PIS + COFINS' in chalk, chalk arrow pointing right to larger box 'CBS'; clean educational diagram, white chalk on black background, no hands, 16:9",
+      "prompt_video": "Animate on black chalkboard: chalk box with 'ICMS + ISS' draws itself, then chalk arrow appears pointing right, then 'IBS' box draws itself; then below, 'PIS + COFINS' box draws itself, arrow appears, 'CBS' box draws itself; elements appear progressively as if drawn by invisible chalk, chalk dust, no hand visible, 16:9",
+      "narracao": "O IBS substitui o ICMS e o ISS. O CBS substitui o PIS e o COFINS. A grande vantagem é a não-cumulatividade plena: o transportador poderá creditar todos os tributos pagos nas suas entradas."
+    },
+    {
+      "numero": 3,
+      "conteudo_visual": "Cálculo simplificado: 'Frete R$ 1.000' no topo, abaixo 'IBS + CBS ≈ 26,5%', seta para baixo com 'Crédito nas entradas', checkmark final. Estilo quadro negro giz",
+      "prompt_imagem": "Black chalkboard with chalk writing: 'Frete R$ 1.000' at top, below an equation 'IBS + CBS = 26,5%', chalk arrow pointing down to text 'Credito nas entradas', chalk checkmark symbol at bottom, white chalk educational style, organized layout, no hands, 16:9",
+      "prompt_video": "Animate on black chalkboard: 'Frete R$ 1.000' writes itself in chalk at top, then '26,5%' equation appears below letter by letter, chalk arrow draws itself downward, 'Credito nas entradas' text appears, checkmark draws itself last; each element appears as if drawn by invisible chalk, chalk dust particles, no hand visible, 16:9",
+      "narracao": "A alíquota estimada de IBS mais CBS é de 26,5% sobre o frete. Mas com o crédito integral, o transportador recupera os tributos pagos em combustível, manutenção e pedágios, reduzindo o valor a recolher."
+    },
+    {
+      "numero": 4,
+      "conteudo_visual": "Linha do tempo horizontal com três marcos: '2026 — Início', '2029 — Alíquotas plenas', '2033 — Fim do ICMS/PIS/COFINS'. Estilo quadro negro giz",
+      "prompt_imagem": "Black chalkboard with chalk timeline: horizontal line with three chalk dots marking '2026 Inicio', '2029 Aliquotas plenas', '2033 Fim do ICMS e PIS e COFINS'; labels below each dot in chalk, clean timeline diagram, white chalk on black background, no hands, 16:9",
+      "prompt_video": "Animate on black chalkboard: horizontal timeline line draws itself in chalk from left to right, then dot and label '2026' appear, then dot and label '2029' appear, then dot and label '2033' appear; each element progressively drawn as if by invisible chalk, chalk dust, no hand visible, 16:9",
+      "narracao": "A transição começa em 2026 e termina em 2033. O transportador precisa se preparar agora: revisar contratos de frete, atualizar sistemas fiscais e acompanhar as regulamentações do Comitê Gestor do IBS."
+    }
+  ]
+}

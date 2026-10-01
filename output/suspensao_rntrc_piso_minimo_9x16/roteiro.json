@@ -1,0 +1,47 @@
+{
+  "titulo": "RNTRC suspenso: como reduzir o risco",
+  "assunto": "Suspensao cautelar do RNTRC por descumprimento reiterado do piso minimo de frete",
+  "estilo": "animacao_2d",
+  "voz_elevenlabs": "Davi Andrei (2CECaLAGTS5NRGxgbcxr)",
+  "duracao_estimada_minutos": 0.9,
+  "num_takes": 5,
+  "descricao_imagem_coringa": "Fundo digital branco puro, uniforme e vazio.",
+  "prompt_imagem_coringa": "Uniform pure #FFFFFF full-screen background filling every pixel of a vertical 9:16 image. No objects, text, frame, board, shadows or texture.",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Caminhao para diante de um alerta de suspensao do RNTRC.",
+      "prompt_imagem": "Colorful flat 2D educational illustration on a pure #FFFFFF full-bleed background, vertical 9:16. A blue cargo truck approaches a red warning shield and a Brazilian registration document. Large exact Brazilian Portuguese title: 'RNTRC PODE SER SUSPENSO'. Smaller exact line: 'ATENÇÃO AO PISO MÍNIMO'. Clean modern vector design, blue red yellow palette, mobile safe margins, no English text, no physical board, frame, scenery, shadows or texture.",
+      "prompt_video": "Animate the cargo truck moving upward, then braking as the red warning shield pops in. Reveal the exact Portuguese text RNTRC PODE SER SUSPENSO and ATENÇÃO AO PISO MÍNIMO. Smooth colorful flat 2D explainer animation on a fixed pure white background, vertical 9:16.",
+      "narracao": "Atenção, transportadoras: a ANTT iniciou procedimentos para suspender o RNTRC de empresas que contratam ou subcontratam fretes abaixo do piso mínimo de forma reiterada."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "Linha do tempo com quatro autuacoes, seis meses e suspensao de cinco a trinta dias.",
+      "prompt_imagem": "Colorful flat 2D vertical infographic on pure #FFFFFF full-bleed background, 9:16. Show a six-month timeline with four red infraction cards on distinct dates, leading to a suspended registration icon. Exact Brazilian Portuguese labels only: 'MAIS DE 4 AUTUAÇÕES', 'EM 6 MESES', 'SUSPENSÃO: 5 A 30 DIAS'. Clean bold vector shapes, excellent mobile readability, no English text, no physical board or frame.",
+      "prompt_video": "Animate four infraction cards landing on different points of a six-month timeline, then the registration icon changes to suspended. Reveal the exact Portuguese labels MAIS DE 4 AUTUAÇÕES, EM 6 MESES and SUSPENSÃO: 5 A 30 DIAS. Fixed pure white background, vertical 9:16.",
+      "narracao": "A medida cautelar pode ser aplicada quando houver mais de quatro autuações, em datas diferentes, dentro de seis meses. A suspensão pode durar de cinco a trinta dias."
+    },
+    {
+      "numero": 3,
+      "conteudo_visual": "Diario Oficial, relogio de 72 horas e operacao bloqueada.",
+      "prompt_imagem": "Colorful flat 2D educational illustration on pure #FFFFFF full-bleed background, vertical 9:16. Show an official publication document, a large 72-hour clock and a cargo operation with a red pause symbol. Exact Brazilian Portuguese text: 'PUBLICAÇÃO NO DOU', 'EFEITO EM 72 HORAS'. Use blue orange red accents, clean hierarchy, no English text, no frame or board.",
+      "prompt_video": "Animate the official document opening, the clock counting to 72 hours, and a red pause symbol appearing over the cargo operation. Reveal PUBLICAÇÃO NO DOU and EFEITO EM 72 HORAS. Smooth flat vector animation on fixed pure white, vertical 9:16.",
+      "narracao": "O ato será publicado no Diário Oficial da União e começa a produzir efeitos setenta e duas horas depois. Por isso, descobrir o problema só após a publicação pode custar caro à operação."
+    },
+    {
+      "numero": 4,
+      "conteudo_visual": "Checklist preventivo com tabela vigente, CIOT, MDF-e e documentos conferidos.",
+      "prompt_imagem": "Colorful flat 2D checklist infographic on pure #FFFFFF full-bleed background, vertical 9:16. A compliance specialist checks four large items with green check marks. Exact Brazilian Portuguese labels: 'TABELA VIGENTE', 'CÁLCULO DO FRETE', 'CIOT E MDF-e', 'DOCUMENTOS E EVIDÊNCIAS'. Add top title 'PREVENÇÃO'. Friendly blue green orange vector art, no English text, no physical board or frame.",
+      "prompt_video": "Animate a specialist checking TABELA VIGENTE, CÁLCULO DO FRETE, CIOT E MDF-e, and DOCUMENTOS E EVIDÊNCIAS one by one. Finish with PREVENÇÃO highlighted in green. Colorful smooth 2D motion, fixed pure white background, vertical 9:16.",
+      "narracao": "Para reduzir o risco, confira a tabela vigente em cada contratação, valide o cálculo do frete e mantenha CIOT, MDF-e e documentos coerentes. Também acompanhe autuações e prazos de defesa."
+    },
+    {
+      "numero": 5,
+      "conteudo_visual": "Consultor analisa painel de conformidade e protege a continuidade da transportadora.",
+      "prompt_imagem": "Colorful flat 2D educational illustration on pure #FFFFFF full-bleed background, vertical 9:16. Show a transport consultancy professional reviewing a compliance dashboard beside a blue cargo company and a green protection shield. Exact Brazilian Portuguese title: 'NÃO ESPERE A SUSPENSÃO'. Exact callout: 'REVISE SUA OPERAÇÃO'. Clean trustworthy vector design, blue green yellow palette, mobile safe margins, no English text, no board or frame.",
+      "prompt_video": "Animate the consultant reviewing the compliance dashboard, risk alerts turning into green checks, and a protection shield surrounding the cargo company. Reveal NÃO ESPERE A SUSPENSÃO and REVISE SUA OPERAÇÃO. Smooth colorful flat 2D animation on pure white, vertical 9:16.",
+      "narracao": "Uma consultoria especializada pode revisar processos, identificar falhas antes da fiscalização e orientar a regularização. Não espere a suspensão: revise sua operação e procure apoio técnico para agir com segurança."
+    }
+  ]
+}

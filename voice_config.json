@@ -1,0 +1,12 @@
+{
+  "primary": {
+    "name": "Davi Andrei",
+    "voice_id": "2CECaLAGTS5NRGxgbcxr",
+    "usage": "default_for_all_videos"
+  },
+  "secondary": {
+    "name": "Elvis - Social Media & Shorts",
+    "voice_id": "zNEsdgTUa3ndwKry8Xcq",
+    "usage": "only_when_explicitly_requested"
+  }
+}

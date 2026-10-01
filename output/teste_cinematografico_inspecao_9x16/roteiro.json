@@ -1,0 +1,26 @@
+{
+  "titulo": "Teste cinematográfico: inspeção antes da viagem",
+  "assunto": "Cuidados essenciais antes de colocar o caminhão na estrada",
+  "estilo": "cinematografico_realista",
+  "voz_elevenlabs": "Davi Andrei (2CECaLAGTS5NRGxgbcxr)",
+  "duracao_estimada_minutos": 0.35,
+  "num_takes": 2,
+  "descricao_imagem_coringa": "Pátio logístico cinematográfico ao amanhecer, sem pessoas nem textos.",
+  "prompt_imagem_coringa": "Photorealistic cinematic vertical 9:16 establishing shot of a modern Brazilian logistics yard at dawn, clean asphalt, subtle morning mist, warm sunlight, one blue semi truck parked in the distance, premium commercial film look, realistic lens and natural colors. No people, no signs, no logos, no readable text, no frame or border.",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Motorista profissional inspecionando pneus, luzes e freios de um caminhão ao amanhecer.",
+      "prompt_imagem": "Photorealistic cinematic commercial still, vertical 9:16. In the same modern Brazilian logistics yard at dawn, show a dramatic close-up of the same blue semi truck's front wheel, clean tire tread, illuminated headlights and visible mechanical inspection details. Warm sunrise rim light, shallow depth of field, subtle mist, premium automotive documentary realism, no people, no logos, no readable text, no captions, no frame or border.",
+      "prompt_video": "Cinematic realistic commercial animation. Begin from the quiet logistics yard at dawn, then use a smooth low-angle dolly movement toward the same blue semi truck. Focus on the tire tread, wheel assembly, headlights switching on and a brief brake-light test. Subtle morning mist, realistic reflections, warm sunrise, premium film color grade, no people, no text, no logos, vertical 9:16.",
+      "narracao": "Antes de pegar a estrada, alguns minutos de inspeção podem evitar horas de prejuízo. Confira pneus, freios, luzes e os principais itens de segurança do caminhão."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "Motorista conferindo documentos e amarração da carga antes de iniciar a viagem.",
+      "prompt_imagem": "Photorealistic cinematic commercial still, vertical 9:16. In the same dawn logistics yard beside the same blue semi truck, show a tablet with an abstract document checklist resting on a clean inspection table near sealed trailer doors and clearly secured cargo restraints. Golden morning light, cinematic depth of field, realistic Brazilian trucking environment, premium documentary look, no people, no logos, no readable text, no captions, no frame or border.",
+      "prompt_video": "Cinematic realistic commercial animation. Start from the quiet dawn yard, track beside the same blue truck toward an inspection table with a tablet showing abstract checklist marks, then move to sealed trailer doors and secure load restraints. Finish with the truck safely departing toward the sunrise. Realistic lighting and reflections, premium film look, no people, no readable text, no logos, vertical 9:16.",
+      "narracao": "Depois, valide os documentos e confirme que a carga está bem acondicionada. Uma viagem segura começa no pátio, antes mesmo de o caminhão entrar na rodovia."
+    }
+  ]
+}

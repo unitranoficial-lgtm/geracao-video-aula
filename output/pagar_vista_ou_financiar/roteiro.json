@@ -1,0 +1,26 @@
+{
+  "titulo": "Pagar à Vista ou Financiar: Você que Decide",
+  "assunto": "Se pagar à vista ou financiar compensa mais para o transportador autônomo",
+  "estilo": "quadro_negro_simples",
+  "voz_elevenlabs": "Elvis - Resonating, Deep and Engaging",
+  "duracao_estimada_segundos": 20,
+  "num_takes": 2,
+  "descricao_imagem_coringa": "Quadro negro completamente vazio, fundo preto puro, sem elementos, sem texto, sem desenhos — lousa em branco",
+  "prompt_imagem_coringa": "Lousa escolar vazia, fundo verde-escuro sem marcas, quadro negro completamente limpo sem texto nem desenhos, textura de lousa de sala de aula, proporção 16:9",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Quadro dividido ao meio por uma linha vertical. Lado esquerdo: ícone de moedas empilhadas com seta para baixo e texto 'CAIXA VAZIO'. Lado direito: ícone de calendário com parcelas marcadas e texto 'MARGEM REDUZIDA'. No centro da linha divisória: 'X'. No topo: 'À VISTA × FINANCIADO' em giz branco.",
+      "prompt_imagem": "Dark green chalkboard background, classroom chalkboard texture, 16:9 aspect ratio. White chalk drawing: bold title 'A VISTA x FINANCIADO' at the top with a vertical dividing line down the center. Left side: stacked coins icon with a downward arrow and the label 'CAIXA VAZIO' written below in chalk. Right side: a calendar icon with small X marks on payment dates and the label 'MARGEM REDUZIDA' below. The dividing line has a large X in the middle. Rough white chalk lines, educational blackboard doodle style.",
+      "prompt_video": "On dark chalkboard: the title 'A VISTA x FINANCIADO' writes itself at the top in chalk, then a vertical dividing line draws itself down the center with an X in the middle; on the left side a coin stack icon appears with a downward arrow and the label 'CAIXA VAZIO'; on the right side a calendar with X marks on dates appears with label 'MARGEM REDUZIDA' — each element appears progressively as if drawn by chalk, no camera movement, static frame, blackboard chalk animation style, 16:9",
+      "narracao": "Pagar à vista elimina os juros e reduz o custo total. Mas compromete o caixa de uma vez. Financiar preserva o capital — só que cada parcela aperta sua margem."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "No centro do quadro, uma grande seta apontando para cima com a pergunta: 'O RETORNO COBRE O CUSTO DO CRÉDITO?' logo abaixo uma linha divisória e dois resultados: à esquerda 'SIM → FINANCIE' e à direita 'NÃO → À VISTA'. Na parte inferior: 'VOCÊ QUE DECIDE' sublinhado duas vezes.",
+      "prompt_imagem": "Dark green chalkboard background, classroom chalkboard texture, 16:9 aspect ratio. White chalk drawing: large upward arrow in the center with the question 'O RETORNO COBRE O CUSTO DO CREDITO?' written beside it. A horizontal chalk line below divides two outcomes: on the left 'SIM → FINANCIE' circled in chalk, on the right 'NAO → A VISTA' circled in chalk. At the bottom center, double-underlined text: 'VOCE QUE DECIDE'. Rough white chalk lines, educational blackboard doodle style.",
+      "prompt_video": "On dark chalkboard: a large upward arrow draws itself in the center with the question 'O RETORNO COBRE O CUSTO DO CREDITO?' appearing beside it; a horizontal line draws itself below dividing two outcomes: 'SIM → FINANCIE' writes itself and gets circled on the left, 'NAO → A VISTA' writes itself and gets circled on the right; finally 'VOCE QUE DECIDE' writes itself at the bottom and gets double-underlined — each element appears progressively as if drawn by chalk, no camera movement, static frame, blackboard chalk animation style, 16:9",
+      "narracao": "A pergunta certa não é se você tem o dinheiro. É se o retorno do que vai comprar cobre o custo do crédito. Se cobre: financie. Se não cobre: pague à vista. Você que decide."
+    }
+  ]
+}

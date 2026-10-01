@@ -1,0 +1,17 @@
+{
+  "project_id": "afab7ed9-d16a-4817-9ef1-aebdccb8d9de",
+  "takes": {
+    "1": {
+      "card_id": "https://flow.google.com/asb/AB-nOUZnDbGuZaehPkwlft0V5yRdvyrV6qFpdxNSXCWF8F7A4BDdHZnDXMozNUgp4zXkX3BtBKRpdtbS0zFZ_irDy7EhEZzB0zxH4hp7bJ8ppcEMhI4Z_SVbFImCRNeKNqL2hhE_cRszpAusIcnnif82n2SDncx-VPUOITA8F_k2Ug",
+      "title": "Semi truck in logistics yard",
+      "md5": "bea5199578b3cc14d117d56e082d5557",
+      "bytes": 3418588
+    },
+    "2": {
+      "card_id": "https://flow.google.com/asb/AB-nOUbtq1z-k7vfObyptk7VONfL6YY9Qf-nFWH_iFGeKug1FGJE2wU6-Qri2v6kxRutyrmfIGJPZH7K5bM-BMO9qifoV5h-s09-PGLOqTmS3uDnMOcST4DOi6w5QfDHvkBHZlYzVRQZyXfqAdpTr68ysb82KwwYq_WfYgVqxMjX6Q",
+      "title": "Blue truck inspection and departure",
+      "md5": "c0539883f314b3e23b5c40b67af16288",
+      "bytes": 3460296
+    }
+  }
+}

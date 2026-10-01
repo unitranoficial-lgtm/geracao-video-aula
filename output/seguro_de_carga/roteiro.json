@@ -1,0 +1,26 @@
+{
+  "titulo": "Seguro de Carga: Você que Decide",
+  "assunto": "Se o seguro de carga compensa ou não para o transportador autônomo",
+  "estilo": "quadro_negro_simples",
+  "voz_elevenlabs": "Elvis - Resonating, Deep and Engaging",
+  "duracao_estimada_segundos": 20,
+  "num_takes": 2,
+  "descricao_imagem_coringa": "Quadro negro completamente vazio, fundo preto puro, sem elementos, sem texto, sem desenhos — lousa em branco",
+  "prompt_imagem_coringa": "Lousa escolar vazia, fundo verde-escuro sem marcas, quadro negro completamente limpo sem texto nem desenhos, textura de lousa de sala de aula, proporção 16:9",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Caminhão no centro com ponto de interrogação grande acima. À esquerda: ícone de chuva/raio (acidente). À direita: ícone de máscara/ladrão (roubo). Abaixo: texto 'SEM SEGURO = SEU BOLSO' em giz branco",
+      "prompt_imagem": "Dark green chalkboard background, classroom chalkboard texture, 16:9 aspect ratio. White chalk drawing: large truck silhouette in the center with a big question mark above it; to the left a lightning bolt icon with a rain cloud labeled 'Acidente'; to the right a robber mask icon labeled 'Roubo'. At the bottom, underlined text: 'SEM SEGURO = SEU BOLSO'. Thin white chalk outlines, rough chalk texture, educational blackboard doodle style.",
+      "prompt_video": "On dark chalkboard: large truck silhouette draws itself in chalk in the center, then a big question mark appears above it; lightning bolt and cloud draw themselves on the left with label; robber mask appears on the right with label; finally at the bottom a line draws itself and text 'SEM SEGURO = SEU BOLSO' writes itself — each element appears progressively, no camera movement, static frame, blackboard chalk animation style, 16:9",
+      "narracao": "Transportar sem seguro de carga é legal. A lei não te obriga. Mas em caso de roubo, acidente ou avaria, todo o prejuízo cai no seu bolso."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "À esquerda: balança com 'CUSTO' de um lado (moeda pequena) e 'RISCO' do outro (caminhão tombado). À direita: cálculo em giz '0,3% da carga'. Abaixo: texto 'VOCÊ QUE DECIDE' sublinhado duas vezes",
+      "prompt_imagem": "Dark green chalkboard background, classroom chalkboard texture, 16:9 aspect ratio. White chalk drawing: on the left a balance scale with a small coin on one side labeled 'CUSTO' and a tipped-over truck on the other side labeled 'RISCO'; on the right the calculation '0,3% da carga' circled in chalk. At the bottom center, double-underlined text: 'VOCE QUE DECIDE'. Thin white chalk outlines, rough chalk texture, educational blackboard doodle style.",
+      "prompt_video": "On dark chalkboard: a balance scale draws itself on the left, then a coin appears on one side labeled 'CUSTO' and a tipped truck appears on the other labeled 'RISCO'; on the right '0,3% da carga' writes itself and gets circled; finally 'VOCE QUE DECIDE' writes itself at the bottom and gets double-underlined — each element appears progressively, no camera movement, static frame, blackboard chalk animation style, 16:9",
+      "narracao": "O seguro de carga custa em média menos de zero vírgula três por cento do valor transportado por viagem. Proteção barata, prejuízo caro. Você que decide."
+    }
+  ]
+}

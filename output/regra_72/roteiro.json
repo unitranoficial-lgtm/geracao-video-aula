@@ -1,0 +1,33 @@
+{
+  "titulo": "A Regra do 72: Descubra Quando Seu Dinheiro Dobra",
+  "assunto": "A regra do 72 — atalho mental para calcular em quantos anos um investimento dobra de valor",
+  "estilo": "quadro_branco",
+  "voz_elevenlabs": "Elvis - Resonating, Deep and Engaging",
+  "duracao_estimada_segundos": 30,
+  "num_takes": 3,
+  "descricao_imagem_coringa": "Quadro branco completamente vazio, fundo branco puro, sem elementos, sem texto, sem desenhos",
+  "prompt_imagem_coringa": "Clean white art canvas, blank and ready to be drawn on. Flat front view, minimal, solid white. Digital graphic design asset, 16:9 aspect ratio.",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Título 'REGRA DO 72' em destaque no centro. Abaixo, a fórmula simples: '72 ÷ TAXA = ANOS'. No canto inferior, um sinal de 'R$' com uma seta circular indicando o dinheiro girando e dobrando.",
+      "prompt_imagem": "White background with hand-drawn marker illustrations: bold title 'REGRA DO 72' written large in the center. Below it, the formula '72 ÷ TAXA = ANOS' in thick marker. In the bottom corner, a 'R$' symbol with a circular arrow suggesting money doubling. Simple flat whiteboard illustration style, black marker lines on white, 16:9 aspect ratio.",
+      "prompt_video": "On the whiteboard surface only: the title 'REGRA DO 72' draws itself boldly in the center; then '72 ÷ TAXA = ANOS' writes itself below; a 'R$' symbol appears in the corner with a circular arrow drawing itself around it. Progressive marker-on-whiteboard animation, static camera, 16:9.",
+      "narracao": "Existe um atalho mental poderoso para descobrir em quanto tempo seu dinheiro dobra. Chama-se Regra do Setenta e Dois: basta dividir setenta e dois pela taxa de juros."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "Três exemplos em colunas: '6% ao ano → 72÷6 = 12 anos', '9% ao ano → 72÷9 = 8 anos', '12% ao ano → 72÷12 = 6 anos'. Cada resultado com uma seta dupla e 'DOBRA!' ao lado.",
+      "prompt_imagem": "White background with hand-drawn marker illustrations: three columns showing examples. Left: '6% ao ano → 72÷6 = 12 anos' with 'DOBRA!' and a double arrow. Center: '9% ao ano → 72÷9 = 8 anos' with 'DOBRA!' and a double arrow. Right: '12% ao ano → 72÷12 = 6 anos' with 'DOBRA!' and a double arrow. Educational whiteboard style, bold black marker on white, 16:9 aspect ratio.",
+      "prompt_video": "On the whiteboard surface only: three columns appear one by one — each formula writes itself ('6% ao ano → 72÷6 = 12 anos', then '9% ao ano', then '12% ao ano') with 'DOBRA!' and a double arrow drawing itself next to each result. Progressive left-to-right reveal, marker animation style, static camera, 16:9.",
+      "narracao": "Rendendo seis por cento ao ano, seu dinheiro dobra em doze anos. A nove por cento, em oito anos. A doze por cento, em apenas seis. Quanto maior a taxa, mais rápido a bola de neve cresce."
+    },
+    {
+      "numero": 3,
+      "conteudo_visual": "Lado esquerdo: 'INVESTIMENTO' com seta para cima e uma bola de neve crescendo. Lado direito: 'DÍVIDA' com a mesma regra invertida e seta para baixo — '20% ao mês → dobra em 3,6 meses!'. No centro: 'REGRA DO 72' sublinhado.",
+      "prompt_imagem": "White background with hand-drawn marker illustrations: left side labeled 'INVESTIMENTO' with an upward arrow and a snowball growing larger down the slope. Right side labeled 'DIVIDA' with a downward arrow and the text '20% ao mes → dobra em 3,6 meses!' in alarming bold marker. Center: 'REGRA DO 72' underlined. Flat whiteboard illustration style, black marker on white, 16:9 aspect ratio.",
+      "prompt_video": "On the whiteboard surface only: 'INVESTIMENTO' and a growing snowball draw on the left with an upward arrow; then 'DIVIDA' appears on the right with a downward arrow and '20% ao mes → dobra em 3,6 meses!' writing itself in bold; 'REGRA DO 72' writes itself in the center and gets underlined. Static camera, marker animation style, 16:9.",
+      "narracao": "E a regra vale dos dois lados. Uma dívida a vinte por cento ao mês dobra em apenas três vírgula seis meses. Agora você tem o mapa. Use a Regra do Setenta e Dois a seu favor."
+    }
+  ]
+}

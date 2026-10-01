@@ -1,0 +1,68 @@
+{
+  "titulo": "Juros Compostos: Como o Tempo Trabalha Para Você",
+  "assunto": "Explicação de juros compostos com personagem palito animado em fundo branco",
+  "estilo": "quadro_branco",
+  "voz_elevenlabs": "Elvis - Resonating, Deep and Engaging",
+  "duracao_estimada_segundos": 96,
+  "num_takes": 8,
+  "descricao_imagem_coringa": "Fundo branco puro, personagem palito simples em pé no centro, braços ao longo do corpo, expressão neutra, estilo desenho a nanquim",
+  "prompt_imagem_coringa": "Pure white background. Simple hand-drawn stick figure character standing in center, arms at sides, neutral smiley face, black ink on white. Flat front view, minimal whiteboard illustration style, 16:9 aspect ratio.",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Personagem palito apontando para cima onde está escrito 'JUROS COMPOSTOS' em letras grandes. Embaixo: 'Juros sobre juros'.",
+      "prompt_imagem": "Pure white background. Hand-drawn stick figure pointing up at bold text 'JUROS COMPOSTOS'. Below the title, smaller text 'juros sobre juros'. Simple black marker illustration style, 16:9 aspect ratio.",
+      "prompt_video": "On white background: stick figure draws itself, then points upward as 'JUROS COMPOSTOS' writes itself in bold letters above; 'juros sobre juros' appears below. Marker-on-white animation, static camera, 16:9.",
+      "narracao": "Você já ouviu falar em juros compostos? Eles são chamados de a oitava maravilha do mundo — e por um bom motivo. Hoje vou te mostrar como eles funcionam e por que você precisa entendê-los."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "Palito dividido em dois lados: esquerda 'JUROS SIMPLES' com linha reta, direita 'JUROS COMPOSTOS' com curva crescente. Palito apontando para a curva com entusiasmo.",
+      "prompt_imagem": "Pure white background. Stick figure in center pointing right at a rising curve labeled 'JUROS COMPOSTOS'. On the left, a straight diagonal line labeled 'JUROS SIMPLES'. Black marker on white, 16:9.",
+      "prompt_video": "On white background: stick figure appears, a straight line draws itself on the left labeled 'JUROS SIMPLES', then a curved exponential line draws itself on the right labeled 'JUROS COMPOSTOS'; stick figure points excitedly at the curve. Marker animation, static camera, 16:9.",
+      "narracao": "No juro simples, você recebe sempre a mesma quantia. Cem reais de juro todo mês, por exemplo. Mas no juro composto, os juros se acumulam — você ganha juros sobre os juros que já recebeu."
+    },
+    {
+      "numero": 3,
+      "conteudo_visual": "Palito segurando um quadro com a fórmula: M = C × (1 + i)^t. Abaixo: C = capital, i = taxa, t = tempo.",
+      "prompt_imagem": "Pure white background. Stick figure holding up a small whiteboard showing the formula 'M = C x (1+i)^t'. Below the formula, three small labels: 'C = capital', 'i = taxa', 't = tempo'. Black marker illustration, 16:9.",
+      "prompt_video": "On white background: stick figure draws itself holding a board, then the formula 'M = C x (1+i)^t' writes itself on the board; the three labels appear below one by one. Marker animation, static camera, 16:9.",
+      "narracao": "A fórmula é simples: M igual a C vezes, um mais i, elevado a t. M é o montante final, C é o capital inicial, i é a taxa de juros, e t é o tempo. Parece complicado, mas na prática é muito intuitivo."
+    },
+    {
+      "numero": 4,
+      "conteudo_visual": "Palito plantando uma sementinha rotulada 'R$ 1.000'. Ao lado, três etapas: Ano 1: R$1.100 → Ano 2: R$1.210 → Ano 3: R$1.331. Setas crescentes entre as etapas.",
+      "prompt_imagem": "Pure white background. Stick figure planting a seed labeled 'R$ 1.000'. To the right, three boxes connected by arrows: 'Ano 1: R$ 1.100', 'Ano 2: R$ 1.210', 'Ano 3: R$ 1.331'. Black marker on white, 16:9.",
+      "prompt_video": "On white background: stick figure plants a seed labeled 'R$ 1.000'; then three boxes appear from left to right connected by arrows — 'Ano 1: R$ 1.100', 'Ano 2: R$ 1.210', 'Ano 3: R$ 1.331' — each writing itself. Marker animation, 16:9.",
+      "narracao": "Exemplo prático: você investe mil reais a dez por cento ao ano. No primeiro ano, vira mil e cem. No segundo, mil duzentos e dez. No terceiro, mil trezentos e trinta e um. Veja: no segundo ano você ganhou mais do que no primeiro, sem fazer nada."
+    },
+    {
+      "numero": 5,
+      "conteudo_visual": "Palito surpreso com expressão 'UAU!' olhando para uma bola de neve que começa pequena e vai crescendo à medida que desce uma rampa.",
+      "prompt_imagem": "Pure white background. Stick figure on the left with a surprised expression and 'UAU!' speech bubble, watching a snowball rolling down a slope on the right, growing larger as it goes. Black marker illustration, 16:9.",
+      "prompt_video": "On white background: a slope draws itself, a small snowball appears at the top and rolls down growing bigger; stick figure appears on the left with a speech bubble 'UAU!' as the snowball grows. Marker animation, 16:9.",
+      "narracao": "É a famosa bola de neve. Quanto mais tempo ela rola, maior ela fica. Os juros compostos funcionam exatamente assim — o efeito é pequeno no começo, mas explosivo com o tempo."
+    },
+    {
+      "numero": 6,
+      "conteudo_visual": "Dois palitos lado a lado: Palito A investe aos 20 anos → coluna alta. Palito B investe aos 40 anos → coluna baixa. Título: 'TEMPO É O SEU MAIOR ALIADO'.",
+      "prompt_imagem": "Pure white background. Two stick figures side by side. Left figure labeled 'Investe aos 20' with a tall bar above it. Right figure labeled 'Investe aos 40' with a short bar above it. Title at top: 'TEMPO É SEU MAIOR ALIADO'. Black marker, 16:9.",
+      "prompt_video": "On white background: title 'TEMPO É SEU MAIOR ALIADO' writes itself at top; two stick figures appear side by side, the left one gets a tall bar labeled 'Investe aos 20' and the right one gets a short bar labeled 'Investe aos 40'. Marker animation, 16:9.",
+      "narracao": "O tempo é o seu maior aliado. Quem começa a investir aos vinte anos acumula muito mais do que quem começa aos quarenta — mesmo investindo menos por mês. Cada ano que você adia, custa caro."
+    },
+    {
+      "numero": 7,
+      "conteudo_visual": "Palito com dois balões de fala: 'REINVISTA OS JUROS' e 'SEJA CONSISTENTE'. Ao fundo, uma seta em espiral crescente indicando o ciclo dos juros compostos.",
+      "prompt_imagem": "Pure white background. Stick figure with two speech bubbles: 'REINVISTA OS JUROS' and 'SEJA CONSISTENTE'. Behind the figure, a large upward spiral arrow. Black marker illustration, 16:9.",
+      "prompt_video": "On white background: stick figure draws itself, then two speech bubbles write themselves — 'REINVISTA OS JUROS' and 'SEJA CONSISTENTE'; a spiral upward arrow draws itself behind. Marker animation, 16:9.",
+      "narracao": "Dois segredos para fazer os juros compostos trabalharem para você: reinvista os rendimentos — nunca saque os juros — e seja consistente. Aportes regulares, mesmo que pequenos, criam uma diferença enorme no longo prazo."
+    },
+    {
+      "numero": 8,
+      "conteudo_visual": "Palito em pose de vitória, braços levantados. Ao redor: 'COMECE HOJE', 'SEJA PACIENTE', 'DEIXE O TEMPO TRABALHAR'. Título central: 'JUROS COMPOSTOS = LIBERDADE'.",
+      "prompt_imagem": "Pure white background. Stick figure in victory pose with arms raised. Three labels around it: 'COMECE HOJE' on the left, 'SEJA PACIENTE' above, 'DEIXE O TEMPO TRABALHAR' on the right. Bold text at bottom: 'JUROS COMPOSTOS = LIBERDADE'. Black marker, 16:9.",
+      "prompt_video": "On white background: stick figure draws itself in victory pose with arms up; three labels appear one by one around it — 'COMECE HOJE', 'SEJA PACIENTE', 'DEIXE O TEMPO TRABALHAR'; finally 'JUROS COMPOSTOS = LIBERDADE' writes itself at the bottom. Marker animation, 16:9.",
+      "narracao": "Resumindo: comece hoje, seja paciente, e deixe o tempo trabalhar. Os juros compostos são a ferramenta mais poderosa para construir riqueza — e a única coisa que você precisa fazer é começar. Seu futuro eu vai te agradecer."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "titulo": "Como Funciona a Bolsa de Valores",
+  "assunto": "Explicação introdutória sobre como funciona a bolsa de valores",
+  "estilo": "quadro_branco",
+  "voz_elevenlabs": "Elvis - Resonating, Deep and Engaging (zNEsdgTUa3ndwKry8Xcq)",
+  "duracao_estimada_minutos": 1.75,
+  "num_takes": 9,
+  "descricao_imagem_coringa": "Tela totalmente branca, sem moldura, sem cenário, sem texto e sem elementos.",
+  "prompt_imagem_coringa": "Pure solid white background filling the entire 16:9 frame, completely blank empty canvas, no border, no frame, no room, no wall, no shadows, no texture, no objects, no text, no people, no hands, flat clean white #FFFFFF surface.",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Prédio de empresa transformando-se em pequenas partes chamadas ações.",
+      "prompt_imagem": "Using the supplied blank white reference as the exact unchanged canvas, pure #FFFFFF full-frame background. Add a simple flat vector educational drawing: a blue company building on the left, an arrow pointing right, then the building divided into several small colorful certificate tiles labeled AÇÕES. Thin clean blue outlines, minimal icons, centered composition, no border, no room, no shadow, no photographic elements, 16:9.",
+      "prompt_video": "Keep the supplied white canvas perfectly fixed. Smoothly draw a blue company building, then divide it into small share certificates with a clear arrow. Minimal educational vector line animation, static camera, no background change, no extra objects.",
+      "narracao": "A bolsa de valores é um mercado onde pequenas partes de empresas são negociadas. Essas partes são chamadas ações, e quem compra uma delas se torna sócio daquela companhia."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "Empresa captando recursos e investidores recebendo ações.",
+      "prompt_imagem": "Using the supplied blank white reference as the exact unchanged canvas, pure #FFFFFF full-frame background. Flat vector educational diagram: a company building at center, several investors represented by simple blue stick figures on the left sending green coins toward the company, and share certificates moving back toward the investors. Clean arrows, minimal colors, no border, no room, no shadow, 16:9.",
+      "prompt_video": "Keep the white background fixed. Draw investors, animate coins moving into the company, then animate share certificates returning to the investors. Clean smooth infographic motion, static camera.",
+      "narracao": "Quando uma empresa abre capital, ela vende ações para captar dinheiro. Esse recurso pode financiar expansão, novos produtos e projetos, enquanto os investidores passam a participar dos resultados."
+    },
+    {
+      "numero": 3,
+      "conteudo_visual": "Investidor usando corretora para enviar uma ordem à bolsa.",
+      "prompt_imagem": "Using the supplied blank white reference as the exact unchanged canvas, pure #FFFFFF background. Simple flat vector flow diagram from left to right: investor icon, smartphone screen labeled CORRETORA, arrow, exchange building labeled BOLSA, arrow, matching buy and sell order cards. Blue outlines with small green accents, centered, no border, no room, no shadows, 16:9.",
+      "prompt_video": "On the fixed white canvas, progressively draw the investor, brokerage phone and exchange building. Animate one order traveling through the arrows until it matches another order. Static camera, clean vector animation.",
+      "narracao": "Para negociar, o investidor usa uma corretora. Ele envia uma ordem de compra ou venda, e a bolsa organiza o encontro entre quem deseja comprar e quem deseja vender."
+    },
+    {
+      "numero": 4,
+      "conteudo_visual": "Oferta e demanda formando o preço de uma ação.",
+      "prompt_imagem": "Using the supplied blank white reference as the exact unchanged canvas, pure #FFFFFF background. Educational flat vector drawing of a balanced scale: many green BUY order cards on one side and red SELL order cards on the other, with a central price tag and small arrows showing price moving up with demand and down with supply. Clean blue outlines, no border, no scenery, 16:9.",
+      "prompt_video": "Keep the white canvas unchanged. Draw buy and sell orders entering a balance scale, then animate the central price moving slightly up and down as the sides change. Smooth infographic motion, static camera.",
+      "narracao": "O preço muda pela oferta e pela demanda. Se muita gente quer comprar uma ação, o valor tende a subir. Se predominam vendedores, o preço costuma cair."
+    },
+    {
+      "numero": 5,
+      "conteudo_visual": "Duas formas de retorno: valorização e dividendos.",
+      "prompt_imagem": "Using the supplied blank white reference as the exact unchanged canvas, pure #FFFFFF background. Split educational vector illustration: on the left, a share certificate with an upward green chart labeled VALORIZAÇÃO; on the right, a company sending coin droplets to an investor labeled DIVIDENDOS. Minimal clean blue line art, green and yellow accents, no border, no room, 16:9.",
+      "prompt_video": "On the fixed white background, draw the upward chart first, then animate small dividend coins moving from the company to the investor. Clean progressive vector animation, static camera.",
+      "narracao": "O acionista pode ganhar de duas maneiras. A primeira é com a valorização da ação. A segunda acontece quando a empresa distribui parte do lucro em dividendos."
+    },
+    {
+      "numero": 6,
+      "conteudo_visual": "Risco representado por gráfico oscilando e fatores econômicos.",
+      "prompt_imagem": "Using the supplied blank white reference as the exact unchanged canvas, pure #FFFFFF background. Flat vector risk illustration: a blue stock chart zigzagging up and down, surrounded by small icons for economy, interest rates, company results and news; a yellow warning triangle at center. Clean minimal educational style, no border, no room, no shadows, 16:9.",
+      "prompt_video": "Keep the white canvas fixed. Animate a stock line fluctuating, then reveal economy, interest rate, company result and news icons around a warning symbol. Smooth controlled motion, static camera.",
+      "narracao": "Mas retorno nunca é garantido. Notícias, juros, economia e resultados da empresa alteram as expectativas. Por isso, ações podem subir bastante, mas também podem perder valor."
+    },
+    {
+      "numero": 7,
+      "conteudo_visual": "Diversificação com cesta contendo empresas de setores diferentes.",
+      "prompt_imagem": "Using the supplied blank white reference as the exact unchanged canvas, pure #FFFFFF background. Educational flat vector drawing of a basket labeled CARTEIRA containing different company icons: bank, factory, energy bolt, shopping cart, technology chip and healthcare cross. A shield surrounds the basket, labeled DIVERSIFICAÇÃO. Blue outlines and varied pastel accents, no border, no scenery, 16:9.",
+      "prompt_video": "On the unchanged white canvas, place different sector icons one by one into an investment basket, then draw a protective shield around it. Minimal smooth vector animation, static camera.",
+      "narracao": "Uma forma de reduzir riscos é diversificar: distribuir o dinheiro entre empresas e setores diferentes. Assim, o desempenho ruim de um investimento pesa menos no conjunto."
+    },
+    {
+      "numero": 8,
+      "conteudo_visual": "Sequência de análise: objetivo, reserva, empresa, preço e longo prazo.",
+      "prompt_imagem": "Using the supplied blank white reference as the exact unchanged canvas, pure #FFFFFF background. Clean horizontal educational checklist with five simple icons and short labels: OBJETIVO, RESERVA, EMPRESA, PREÇO, LONGO PRAZO. Include a target, emergency jar, magnifying glass over a company, price tag and calendar. Blue line art with green check marks, no border, no room, 16:9.",
+      "prompt_video": "Keep the pure white background fixed. Draw the five checklist icons from left to right and add green check marks sequentially. Smooth educational vector animation, static camera.",
+      "narracao": "Antes de investir, defina objetivos, mantenha uma reserva de emergência e estude a empresa. Avalie seus resultados, dívidas, preço e perspectivas, pensando sempre no longo prazo."
+    },
+    {
+      "numero": 9,
+      "conteudo_visual": "Resumo visual conectando empresas, bolsa e investidores.",
+      "prompt_imagem": "Using the supplied blank white reference as the exact unchanged canvas, pure #FFFFFF background. Final flat vector summary diagram: COMPANHIAS on the left, BOLSA in the center, INVESTIDORES on the right, connected by bidirectional arrows. Below, three clean icons labeled CRESCIMENTO, DIVIDENDOS, RISCO. Balanced centered composition, blue outlines with green and yellow accents, no border, no room, no shadow, 16:9.",
+      "prompt_video": "On the fixed pure white canvas, draw companies, exchange and investors, connect them with arrows, then reveal growth, dividends and risk icons. Finish on the exact supplied final frame, static camera.",
+      "narracao": "Em resumo, a bolsa conecta empresas que precisam de capital a investidores que buscam retorno. Entender essa dinâmica ajuda a investir com consciência, disciplina e controle de risco."
+    }
+  ]
+}

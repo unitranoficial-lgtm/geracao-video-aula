@@ -2,8 +2,30 @@
 __pycache__/
 *.pyc
 *.pyo
-output/audio/
-output/video/
-output/*.json
-!output/.gitkeep
 .DS_Store
+
+# Outputs — mídias geradas (não versionar)
+output/**/*.mp4
+output/**/*.mp3
+output/**/*.wav
+output/**/*.mkv
+output/**/*.avi
+output/**/*.webm
+output/**/*.png
+output/**/*.jpg
+output/**/*.jpeg
+output/**/*.gif
+output/**/_temp/
+output/**/*.crdownload
+concat_list.txt
+
+# Vídeos finais exportados
+videos finais/
+
+# Sessão e perfis Chrome (dados locais)
+flow_session.json
+flow_chrome_profile/
+downloads_tmp/
+
+# Diagnóstico (gerado localmente)
+auth_diagnostic.png

@@ -1,0 +1,33 @@
+{
+  "titulo": "Teste cartoon: inspeção antes da viagem",
+  "assunto": "Checklist de segurança antes de colocar o caminhão na estrada",
+  "estilo": "cartoon_2d_narrativo",
+  "voz_elevenlabs": "Davi Andrei (2CECaLAGTS5NRGxgbcxr)",
+  "duracao_estimada_minutos": 0.4,
+  "num_takes": 3,
+  "descricao_imagem_coringa": "Cena-base cartoon com motorista, caminhão azul e pátio logístico.",
+  "prompt_imagem_coringa": "High-quality colorful 2D cartoon establishing frame, vertical 9:16. A friendly Brazilian male truck driver named Carlos, about 40 years old, medium brown skin, short dark hair, small neat beard, wearing the same navy blue uniform, yellow reflective safety vest and blue cap, stands beside the same modern bright blue semi truck in a clean illustrated logistics yard at sunrise. Full character and truck visible, expressive friendly design, crisp outlines, soft cel shading, professional animated TV series quality, consistent character model sheet look. No text, no logos, no frame, no photorealism.",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Carlos chega ao caminhão e abre seu checklist antes da viagem.",
+      "prompt_imagem": "Using the supplied cartoon reference as the exact character, truck and location design, create a high-quality colorful 2D cartoon frame, vertical 9:16. The same driver Carlos stands beside the same bright blue semi truck, holding a clipboard and pointing to the first item with a confident smile. Add one clean green checklist symbol, but no words. Keep identical face, beard, navy uniform, yellow reflective vest, blue cap, truck shape and sunrise logistics yard. Crisp outlines, expressive pose, soft cel shading, professional animated TV series quality, no logos, no readable text, no frame, no photorealism.",
+      "prompt_video": "Animate as a polished 2D cartoon scene. Carlos walks toward the same blue truck, stops beside it, opens his clipboard and taps the first checklist item. The camera gently follows him; his expression becomes focused and confident. Maintain the exact same character, clothes, truck and yard design. Smooth expressive character animation, clean cel shading, no readable text, no logos, vertical 9:16.",
+      "narracao": "Antes de cada viagem, Carlos reserva alguns minutos para o checklist. Esse cuidado simples ajuda a encontrar problemas antes que eles apareçam na estrada."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "Carlos verifica pneus, luzes e freios; cada item recebe confirmação verde.",
+      "prompt_imagem": "Using the supplied cartoon reference as the exact character, truck and location design, create a dynamic colorful 2D cartoon frame, vertical 9:16. The same driver Carlos crouches safely beside the front wheel of the same blue semi truck, checking the tire while the headlights glow. Show three floating illustrated icons with green confirmation marks: a tire, a headlight and a brake disc. No written words. Keep identical face, beard, navy uniform, yellow vest, blue cap, truck proportions and logistics yard. Crisp outlines, expressive action, professional animated TV series quality, no logos, no readable text, no frame, no photorealism.",
+      "prompt_video": "Animate a lively 2D cartoon inspection sequence. Carlos checks the tire tread, stands and switches on the lights, then observes a quick brake test. Each completed action produces a green confirmation mark beside the tire, headlight and brake icons. Maintain the exact same driver, uniform, blue truck and yard. Smooth squash-and-stretch details, expressive but realistic work actions, no readable text, no logos, vertical 9:16.",
+      "narracao": "Ele confere os pneus, testa as luzes e observa os freios. Cada item aprovado deixa o caminhão mais preparado e a operação mais segura."
+    },
+    {
+      "numero": 3,
+      "conteudo_visual": "Carlos confirma documentos e carga, fecha o checklist e parte com segurança.",
+      "prompt_imagem": "Using the supplied cartoon reference as the exact character, truck and location design, create a high-quality colorful 2D cartoon final frame, vertical 9:16. The same driver Carlos closes his clipboard with a satisfied smile beside the same blue semi truck. The trailer doors are visibly sealed and the load is represented by secure straps with green confirmation marks. In the background, the yard gate opens toward a sunny road. Keep identical character face, beard, navy uniform, yellow vest, blue cap and truck design. Crisp outlines, warm cinematic cartoon lighting, professional animated TV series quality, no logos, no readable text, no frame, no photorealism.",
+      "prompt_video": "Animate a polished 2D cartoon finale. Carlos checks the sealed trailer doors, confirms the load straps and documents, closes the clipboard with a green confirmation mark, climbs into the same blue truck and drives slowly through the opening yard gate toward the sunrise. Maintain exact character and truck consistency. Smooth expressive motion, warm cel-shaded lighting, no readable text, no logos, vertical 9:16.",
+      "narracao": "Por último, Carlos confirma os documentos e a fixação da carga. Checklist concluído, ele segue viagem com mais confiança e segurança."
+    }
+  ]
+}

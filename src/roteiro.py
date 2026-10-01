@@ -17,21 +17,33 @@ Cria roteiros para vídeos educacionais gerados por IA, sem presença humana.
 Cada take tem exatamente 10 segundos de vídeo. O áudio de narração ficará entre 12-16 segundos
 (o vídeo será estendido na edição para cobrir o áudio — isso é esperado).
 
-Para os prompts de imagem (Nano Banana 2, 16:9): descreva o conteúdo específico que deve aparecer
+Para os prompts de imagem (Nano Banana 2, na proporção solicitada): descreva o conteúdo específico que deve aparecer
 na imagem final do take — textos, diagramas, fórmulas, listas, títulos — de forma visual e clara.
+
+REGRA OBRIGATÓRIA DE IDIOMA: todo texto que aparecer visualmente na imagem ou no vídeo deve estar
+em português do Brasil, com acentuação correta. Os prompts técnicos podem estar em inglês, mas
+rótulos, títulos, placas, botões, fórmulas explicadas e qualquer palavra renderizada devem ser PT-BR.
+Nunca use rótulos ingleses como BUY, SELL, SHARES ou INVESTORS; traduza-os para COMPRAR, VENDER,
+AÇÕES e INVESTIDORES.
 
 Para os prompts de vídeo (Omni 1.1 Flash): descreva como animar a imagem coringa → imagem final,
 conforme o estilo escolhido. O vídeo vai do primeiro frame (imagem coringa) ao último (imagem do take).
 
 A imagem coringa é o ponto de partida de todos os takes — para quadro branco com mão: quadro limpo,
-sem elementos, sem mão. A animação traz a mão escrevendo até chegar na imagem final do take."""
+sem elementos, sem mão.
+
+REGRA OBRIGATÓRIA PARA ESTILOS COM MÃO: o prompt_imagem descreve somente o frame final já
+concluído. O frame final nunca pode mostrar mão, dedos, braço, pessoa ou marcador/caneta. A mão
+existe exclusivamente no prompt_video, durante o processo de desenho, e deve sair completamente
+da tela antes do último frame. O vídeo termina exatamente na ilustração final limpa, sem a mão."""
 
 ESTILO_INSTRUCOES = {
     EstiloVisual.QUADRO_BRANCO_MAO: (
         "quadro branco com mão animada escrevendo",
         "Coringa: clean white whiteboard, empty, no hand, no text, no elements, pure white surface, educational setting.",
         "animate with a hand holding a marker in motion, drawing and writing the content onto the whiteboard, "
-        "smooth motion animation, the whiteboard background stays fixed, only the hand moves writing the content"
+        "smooth motion animation, the whiteboard background stays fixed, only the hand moves writing the content; "
+        "the hand, arm and marker must exit completely before the last frame, which shows only the completed artwork"
     ),
     EstiloVisual.QUADRO_BRANCO: (
         "quadro branco com elementos aparecendo",
@@ -46,7 +58,7 @@ ESTILO_INSTRUCOES = {
     ),
     EstiloVisual.ANIMACAO_2D: (
         "animação 2D flat moderna",
-        "Clean white background, empty canvas, no elements, flat design style.",
+        "Uniform full-bleed background filling every pixel of the 16:9 image, with no physical surface, panel, board, paper, frame, border, shadow, perspective, room or object. Use the background color requested by the user; when white is requested use pure #FFFFFF.",
         "animate flat 2D icons and text appearing with smooth transitions, modern explainer video style, "
         "elements slide and fade in progressively"
     ),
@@ -79,7 +91,7 @@ Texto: {texto}"""}]
     return json.loads(raw.strip())
 
 
-def gerar_roteiro(input_texto: str) -> Roteiro:
+def gerar_roteiro(input_texto: str, aspect_ratio: str = "16:9") -> Roteiro:
     """Gera o roteiro completo a partir do input livre do usuário."""
     client = anthropic.Anthropic()
 
@@ -93,12 +105,17 @@ def gerar_roteiro(input_texto: str) -> Roteiro:
     duracao_seg = duracao_min * 60
     num_takes = max(3, round(duracao_seg / 13))
 
+    if aspect_ratio not in {"16:9", "9:16"}:
+        raise ValueError(f"Proporção não suportada: {aspect_ratio}")
+
     estilo_nome, prompt_coringa, instrucao_animacao = ESTILO_INSTRUCOES[estilo]
+    prompt_coringa = re.sub(r"(?<!\d)(?:16:9|9:16)(?!\d)", aspect_ratio, prompt_coringa)
 
     console.print(Panel(
         f"[bold cyan]Assunto:[/bold cyan] {assunto}\n"
         f"[bold cyan]Estilo:[/bold cyan] {estilo_nome}\n"
         f"[bold cyan]Duração:[/bold cyan] {duracao_min} min → {num_takes} takes\n"
+        f"[bold cyan]Proporção:[/bold cyan] {aspect_ratio}\n"
         f"[bold cyan]Voz:[/bold cyan] {voz}",
         title="Gerando Roteiro"
     ))
@@ -109,7 +126,12 @@ Especificações:
 - {num_takes} takes de 10 segundos cada
 - Estilo visual: {estilo_nome}
 - Voz ElevenLabs: {voz}
+- Proporção de todas as imagens e vídeos: {aspect_ratio}
+- Organize a composição especificamente para {aspect_ratio}; em 9:16 use enquadramento vertical, elementos empilhados e margens seguras para celular.
 - Instrução de animação dos vídeos: {instrucao_animacao}
+- Todo texto visível dentro das imagens e vídeos deve estar em português do Brasil, mesmo que os prompts estejam em inglês. Use acentos corretos e traduza qualquer rótulo inglês.
+- Se o pedido disser "fundo totalmente branco", a coringa deve ser somente uma cor branca #FFFFFF preenchendo cada pixel. Não desenhe quadro branco, placa, folha, tela, canvas, moldura, parede, sombra, textura, perspectiva ou cenário.
+- Se o estilo tiver mão escrevendo, cada prompt_imagem deve descrever apenas a arte final concluída e incluir explicitamente: "No hand, fingers, arm, person, marker or pen visible in the final frame." A mão só pode ser mencionada no prompt_video, que deve ordenar sua saída completa antes do último frame.
 
 Responda APENAS com JSON válido:
 
@@ -126,7 +148,7 @@ Responda APENAS com JSON válido:
     {{
       "numero": 1,
       "conteudo_visual": "<descrição em português do que aparece na imagem final>",
-      "prompt_imagem": "<prompt em inglês para Nano Banana 2, descreve o conteúdo visual específico, estilo: {estilo_nome}, 16:9, educational>",
+      "prompt_imagem": "<prompt em inglês para Nano Banana 2, descreve o conteúdo visual específico, estilo: {estilo_nome}, {aspect_ratio}, educational>",
       "prompt_video": "<prompt em inglês para Omni 1.1 Flash: {instrucao_animacao}, [descreve o conteúdo do take]>",
       "narracao": "<texto da narração em português, entre 12-16 segundos de fala>"
     }}

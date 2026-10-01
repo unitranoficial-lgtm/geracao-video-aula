@@ -1,6 +1,8 @@
 """Etapa 4: Edição com FFmpeg — sincroniza vídeos e áudios de cada take e concatena tudo."""
 
 import os
+import re
+import shutil
 import subprocess
 from pathlib import Path
 from rich.console import Console
@@ -8,7 +10,13 @@ from rich.console import Console
 console = Console()
 
 
+def _ffmpeg() -> str:
+    return os.environ.get("FFMPEG_BINARY") or shutil.which("ffmpeg") or "ffmpeg"
+
+
 def _run(cmd: list[str]) -> None:
+    if cmd and cmd[0] == "ffmpeg":
+        cmd[0] = _ffmpeg()
     result = subprocess.run(cmd, capture_output=True, text=True)
     if result.returncode != 0:
         raise RuntimeError(f"FFmpeg error:\n{result.stderr}")
@@ -16,12 +24,27 @@ def _run(cmd: list[str]) -> None:
 
 def get_duracao(arquivo: str) -> float:
     """Retorna a duração de um arquivo de áudio ou vídeo em segundos."""
+    ffprobe = os.environ.get("FFPROBE_BINARY") or shutil.which("ffprobe")
+    if ffprobe:
+        result = subprocess.run(
+            [ffprobe, "-v", "quiet", "-show_entries", "format=duration",
+             "-of", "csv=p=0", arquivo],
+            capture_output=True, text=True
+        )
+        if result.returncode == 0 and result.stdout.strip():
+            return float(result.stdout.strip())
+
+    # Distribuições compactas podem trazer apenas ffmpeg. O cabeçalho de
+    # inspeção ainda informa Duration com precisão centesimal.
     result = subprocess.run(
-        ["ffprobe", "-v", "quiet", "-show_entries", "format=duration",
-         "-of", "csv=p=0", arquivo],
+        [_ffmpeg(), "-hide_banner", "-i", arquivo],
         capture_output=True, text=True
     )
-    return float(result.stdout.strip())
+    match = re.search(r"Duration:\s*(\d+):(\d+):(\d+(?:\.\d+)?)", result.stderr)
+    if not match:
+        raise RuntimeError(f"Não foi possível obter a duração de {arquivo}")
+    horas, minutos, segundos = match.groups()
+    return int(horas) * 3600 + int(minutos) * 60 + float(segundos)
 
 
 def processar_take(
@@ -32,53 +55,29 @@ def processar_take(
 ) -> None:
     """
     Para um take:
-    1. Remove o áudio original do vídeo
-    2. Estende o último frame até cobrir a duração do áudio
-    3. Sincroniza o áudio do ElevenLabs
+    1. Estende o último frame com tpad se audio > video (nunca corta o áudio)
+    2. Substitui o áudio original pelo áudio do ElevenLabs
+    O áudio sempre é preservado inteiro; só os frames de vídeo são estendidos.
     """
     Path(pasta_temp).mkdir(parents=True, exist_ok=True)
 
     duracao_video = get_duracao(video_path)
     duracao_audio = get_duracao(audio_path)
 
-    nome_base = Path(video_path).stem
-    video_sem_audio = os.path.join(pasta_temp, f"{nome_base}_mudo.mp4")
-    ultimo_frame = os.path.join(pasta_temp, f"{nome_base}_last_frame.png")
-    extensao = os.path.join(pasta_temp, f"{nome_base}_extensao.mp4")
-    video_estendido = os.path.join(pasta_temp, f"{nome_base}_estendido.mp4")
-    lista_concat = os.path.join(pasta_temp, f"{nome_base}_concat.txt")
+    extra = max(0.0, duracao_audio - duracao_video)
 
-    # Remove áudio original
-    _run(["ffmpeg", "-y", "-i", video_path, "-an", "-c:v", "copy", video_sem_audio])
-
-    if duracao_audio > duracao_video:
-        extensao_segundos = duracao_audio - duracao_video
-
-        # Extrai último frame
-        _run(["ffmpeg", "-y", "-sseof", "-0.5", "-i", video_sem_audio,
-              "-frames:v", "1", "-q:v", "2", ultimo_frame])
-
-        # Cria vídeo estático do último frame com a duração da extensão
-        _run(["ffmpeg", "-y", "-loop", "1", "-i", ultimo_frame,
-              "-t", str(extensao_segundos),
-              "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "24", extensao])
-
-        # Concatena vídeo original + extensão
-        with open(lista_concat, "w") as f:
-            f.write(f"file '{os.path.abspath(video_sem_audio)}'\n")
-            f.write(f"file '{os.path.abspath(extensao)}'\n")
-
-        _run(["ffmpeg", "-y", "-f", "concat", "-safe", "0",
-              "-i", lista_concat, "-c:v", "libx264", "-pix_fmt", "yuv420p", video_estendido])
-
-        video_para_usar = video_estendido
-    else:
-        video_para_usar = video_sem_audio
-
-    # Sincroniza áudio do ElevenLabs
-    _run(["ffmpeg", "-y", "-i", video_para_usar, "-i", audio_path,
-          "-c:v", "copy", "-c:a", "aac", "-map", "0:v:0", "-map", "1:a:0",
-          "-shortest", output_path])
+    # tpad estende o último frame se necessário (extra=0 é no-op para o vídeo)
+    _run([
+        "ffmpeg", "-y",
+        "-i", video_path,
+        "-i", audio_path,
+        "-filter_complex", f"[0:v]tpad=stop_mode=clone:stop_duration={extra:.3f}[v]",
+        "-map", "[v]",
+        "-map", "1:a",
+        "-c:v", "libx264", "-pix_fmt", "yuv420p", "-r", "24",
+        "-c:a", "aac",
+        output_path,
+    ])
 
 
 def concatenar_takes(takes_paths: list[str], output_path: str, pasta_temp: str) -> None:

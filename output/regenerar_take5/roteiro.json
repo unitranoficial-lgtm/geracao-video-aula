@@ -1,0 +1,15 @@
+{
+  "titulo": "Regenerar take 5",
+  "slug": "regenerar_take5",
+  "num_takes": 1,
+  "prompt_imagem_coringa": "",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Duas formas de retorno: valorização e dividendos.",
+      "prompt_imagem": "",
+      "prompt_video": "On the fixed white background, draw the upward chart first, then animate small dividend coins moving from the company to the investor. Clean progressive vector animation, static camera.",
+      "narracao": "O acionista pode ganhar de duas maneiras. A primeira é com a valorização da ação. A segunda acontece quando a empresa distribui parte do lucro em dividendos."
+    }
+  ]
+}

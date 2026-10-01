@@ -1,0 +1,47 @@
+{
+  "titulo": "CIOT: o registro que identifica cada frete",
+  "assunto": "O que é o CIOT e como funciona no transporte rodoviário remunerado de cargas",
+  "estilo": "animacao_2d",
+  "voz_elevenlabs": "Davi Andrei (2CECaLAGTS5NRGxgbcxr)",
+  "duracao_estimada_minutos": 1.0,
+  "num_takes": 5,
+  "descricao_imagem_coringa": "Fundo digital branco puro, uniforme e vazio.",
+  "prompt_imagem_coringa": "Uniform pure #FFFFFF full-screen background filling every pixel of a vertical 9:16 image. No objects, text, frame, board, shadows or texture.",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Caminhão colorido, documento digital e código CIOT em destaque.",
+      "prompt_imagem": "Colorful flat 2D educational illustration on a pure #FFFFFF full-bleed background, vertical 9:16. A blue cargo truck drives toward a digital document with a green verification seal. Large exact Brazilian Portuguese title: 'O QUE É CIOT?'. Below it, write 'CÓDIGO DA OPERAÇÃO'. Clean vector design, blue green orange palette, mobile safe margins, no English text, no physical board or frame.",
+      "prompt_video": "Animate the blue cargo truck entering from below, the digital document unfolding, and the green verification seal stamping into place. Reveal the exact Portuguese text O QUE É CIOT? and CÓDIGO DA OPERAÇÃO. Colorful smooth flat 2D explainer animation on a fixed pure white background, vertical 9:16.",
+      "narracao": "CIOT significa Código Identificador da Operação de Transporte. Ele funciona como o registro eletrônico de cada operação de transporte rodoviário remunerado de cargas perante a ANTT."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "Fluxo visual com contratante, transportador, caminhão, origem, destino e valor do frete.",
+      "prompt_imagem": "Colorful flat 2D infographic on pure #FFFFFF full-bleed background, vertical 9:16. Build a clean stacked flow with icons and exact Brazilian Portuguese labels: 'CONTRATANTE', 'TRANSPORTADOR', 'VEÍCULO', 'ORIGEM E DESTINO', 'VALOR DO FRETE'. Connect them with blue arrows to a central document labeled 'CIOT'. Friendly vector art, high legibility, no English text, no scenery or frame.",
+      "prompt_video": "Animate each Portuguese-labeled icon appearing in sequence and connecting with blue arrows to the central CIOT document. Keep labels exact and readable. Energetic colorful flat vector motion on fixed pure white, vertical 9:16.",
+      "narracao": "Nesse cadastro entram dados essenciais: quem contratou, quem transporta, os veículos utilizados, origem e destino da carga, tipo da operação e valor do frete."
+    },
+    {
+      "numero": 3,
+      "conteudo_visual": "Calendário e relógio antes da partida, com a frase ANTES DE INICIAR A VIAGEM.",
+      "prompt_imagem": "Colorful flat 2D educational illustration on a pure #FFFFFF full-bleed background, vertical 9:16. Show a cargo truck stopped at a starting line, beside a calendar and clock with a green check. Exact Brazilian Portuguese heading: 'ANTES DE INICIAR A VIAGEM'. Add smaller exact text: 'REGISTRE A OPERAÇÃO'. Clean modern vector style, blue green orange, mobile safe margins, no English text.",
+      "prompt_video": "Animate the calendar page, clock hands and green check, then the truck pauses at the starting line. Reveal ANTES DE INICIAR A VIAGEM and REGISTRE A OPERAÇÃO. Smooth colorful explainer motion on fixed pure white, vertical 9:16.",
+      "narracao": "Pelas regras atuais, a operação deve ser registrada antes do início da viagem. O CIOT identifica o frete e permite verificar a autenticidade das informações declaradas."
+    },
+    {
+      "numero": 4,
+      "conteudo_visual": "Escudo de fiscalização, lupa sobre o frete e balança do piso mínimo.",
+      "prompt_imagem": "Colorful flat 2D infographic on pure #FFFFFF full-bleed background, vertical 9:16. Center a shield labeled 'RASTREABILIDADE'. Below show a magnifying glass over a freight document labeled 'FISCALIZAÇÃO' and a balanced scale labeled 'PISO MÍNIMO'. Use blue green yellow and orange vector shapes, clean hierarchy, exact Brazilian Portuguese text only, no frame or physical board.",
+      "prompt_video": "Animate the shield assembling, the magnifying glass scanning the freight document, and the scale balancing. Reveal the exact Portuguese labels RASTREABILIDADE, FISCALIZAÇÃO and PISO MÍNIMO. Smooth colorful flat motion on pure white, vertical 9:16.",
+      "narracao": "O registro aumenta a rastreabilidade, apoia a fiscalização e ajuda a conferir o cumprimento do piso mínimo de frete quando essa regra se aplica à operação."
+    },
+    {
+      "numero": 5,
+      "conteudo_visual": "Instituição de pagamento e empresa transportadora enviando dados para a ANTT, com checklist final.",
+      "prompt_imagem": "Colorful flat 2D educational illustration on pure #FFFFFF full-bleed background, vertical 9:16. At the top write exact title 'COMO GERAR?'. Show two paths: an icon labeled 'INSTITUIÇÃO DE PAGAMENTO' and a company building labeled 'ETC COM INTEGRAÇÃO', both sending data to a blue ANTT document icon. Finish with a green checklist labeled 'CONFIRA ANTES DA VIAGEM'. Clean modern vector art, Portuguese text only, no English labels.",
+      "prompt_video": "Animate two data paths flowing from INSTITUIÇÃO DE PAGAMENTO and ETC COM INTEGRAÇÃO toward the ANTT document. Finish by checking the green list and reveal CONFIRA ANTES DA VIAGEM. Colorful smooth flat 2D animation on fixed pure white, vertical 9:16.",
+      "narracao": "A forma de emissão depende de quem realiza o transporte. Ela pode ocorrer por instituição de pagamento ou por integração autorizada. Antes da viagem, confirme os dados e o código gerado."
+    }
+  ]
+}

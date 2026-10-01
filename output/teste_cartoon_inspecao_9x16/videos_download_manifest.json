@@ -1,0 +1,23 @@
+{
+  "project_id": "56d0dce4-f842-4696-8e78-9bf6687d2816",
+  "takes": {
+    "1": {
+      "card_id": "https://flow.google.com/asb/AB-nOUbmcB96zhrR_ph-Cj2dybD1ldXKYBnGWHt6zxrn7vzdY4StbeeRCNveN5kcuDmckypD7fWlz8Gg-OBNa5VfRqHpTSorWRR4GHxO08nB0VGzvI6z8U3PJ4d24DNZvzS0RqG7ofDykmFLsQJ5RP3kv7L2ep_4gH2gBU-29UB6hw",
+      "title": "Carlos walking toward blue truck",
+      "md5": "3ace8abec51a37f4d4bdf0f86c29c6b1",
+      "bytes": 3762349
+    },
+    "2": {
+      "card_id": "https://flow.google.com/asb/AB-nOUZoEuyUeEBPZ1ct2uSgmScnblUYThWlRl9VHb3OjDerlXGN2K3HAPvxS4IJ8w9N2DOVm_WmEY9UsB8DQdPPTTKLc1RW0Xjz-5XqWGle71cyljNuJAUgRzBqh4GAK6c_eJ552uQZ6PT3mqTT_4E8gAvugwSD8sYORcX-HGYqZA",
+      "title": "Animating 2D cartoon inspection …",
+      "md5": "022b10a8440e2891c7099855cb352daf",
+      "bytes": 3200399
+    },
+    "3": {
+      "card_id": "https://flow.google.com/asb/AB-nOUac8jjQOCHIMWuyi9Tqp3N2mIKb3_rGrnS36SdB8vbbyyWhY1pLv35oHGIXcYrXiceNYt2HsgPlQ5ho_UszzWVZwFh7BiA1bSMinbC4NHk0sT5WgVLBQ-J4XxhbtqlOjDQEdUkNA6_a1Kr5RJfxqo5vdMpoLV0s1wxMK9gv5w",
+      "title": "Carlos drives truck away",
+      "md5": "5b7e29c60af7166d703b409338f6d594",
+      "bytes": 3255906
+    }
+  }
+}

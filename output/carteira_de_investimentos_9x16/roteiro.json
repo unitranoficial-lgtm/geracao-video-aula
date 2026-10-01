@@ -1,0 +1,47 @@
+{
+  "titulo": "Como montar uma boa carteira de investimentos",
+  "assunto": "Princípios para montar uma carteira de investimentos equilibrada",
+  "estilo": "animacao_2d",
+  "voz_elevenlabs": "Elvis",
+  "duracao_estimada_minutos": 1.0,
+  "num_takes": 5,
+  "descricao_imagem_coringa": "Fundo digital totalmente branco, uniforme, sem objetos, molduras, sombras ou textura.",
+  "prompt_imagem_coringa": "Uniform featureless pure #FFFFFF color field filling every pixel edge-to-edge in a 9:16 vertical image. Render only the flat digital background color. No board, paper, panel, canvas, frame, border, shadow, texture, perspective, room, scenery, object, text or marks.",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Um alvo colorido no alto, uma estrada ascendente e três placas: OBJETIVO, PRAZO e RISCO.",
+      "prompt_imagem": "Create a colorful flat 2D educational illustration on a pure #FFFFFF full-bleed background, vertical 9:16 composition optimized for mobile. At the top, a blue and orange target with an arrow in the center. Below it, a rising path with three clean signposts labeled exactly in Brazilian Portuguese: 'OBJETIVO', 'PRAZO', 'RISCO'. Use friendly vector shapes, blue, green, orange and purple, thin clean outlines, generous spacing, no photorealism, no physical board, no frame, no shadows, no English text.",
+      "prompt_video": "Animate the flat colorful illustrations progressively over the fixed pure white background. First the target draws itself, then the arrow lands in the center, then the rising path grows upward and the three Portuguese signposts OBJETIVO, PRAZO and RISCO pop in one by one. Smooth energetic explainer motion, vertical 9:16, keep all text legible and unchanged.",
+      "narracao": "Uma boa carteira começa antes de escolher investimentos. Defina seu objetivo, o prazo para usar o dinheiro e quanto risco você realmente suporta sem perder o sono."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "Um escudo protegendo moedas, com a legenda RESERVA DE EMERGÊNCIA e seis pequenos calendários.",
+      "prompt_imagem": "Create a colorful flat 2D educational illustration on a pure #FFFFFF full-bleed background, vertical 9:16. Center a strong blue shield protecting a stack of golden coins. Above it place the exact Brazilian Portuguese title 'RESERVA DE EMERGÊNCIA'. Below, show six small calendar icons in a neat vertical-friendly grid and a green liquidity drop icon labeled 'LIQUIDEZ'. Friendly vector style, clean outlines, blue green yellow accents, generous white space, no scenery, no physical surface, no English text.",
+      "prompt_video": "Animate the shield forming around the coins, then make the six calendar icons appear in sequence and the green LIQUIDEZ icon bounce gently. Flat colorful motion graphics on a fixed pure white background, smooth explainer animation, vertical 9:16, Portuguese text remains exact and readable.",
+      "narracao": "Antes de buscar rentabilidade, monte uma reserva de emergência com alta liquidez e baixo risco. Ela evita que você venda investimentos de longo prazo em um momento ruim."
+    },
+    {
+      "numero": 3,
+      "conteudo_visual": "Uma cesta dividida entre renda fixa, ações, fundos imobiliários e exterior, com cores diferentes.",
+      "prompt_imagem": "Create a colorful flat 2D educational illustration on a pure #FFFFFF full-bleed background, vertical 9:16 mobile layout. Show a large investment basket divided into four clearly colored sections with simple icons and exact Brazilian Portuguese labels: 'RENDA FIXA', 'AÇÕES', 'FUNDOS IMOBILIÁRIOS', 'EXTERIOR'. Add a small heading 'DIVERSIFICAÇÃO'. Use blue, green, orange and purple, balanced stacked composition, thin clean vector outlines, no photorealism, no board, no frame, no English text.",
+      "prompt_video": "Animate four colored investment pieces flying from different directions into one basket. Reveal the Portuguese labels RENDA FIXA, AÇÕES, FUNDOS IMOBILIÁRIOS and EXTERIOR as each section settles, then draw the title DIVERSIFICAÇÃO. Smooth flat 2D explainer animation on fixed pure white, vertical 9:16.",
+      "narracao": "Depois, diversifique. Combine renda fixa, ações, fundos imobiliários e ativos no exterior. Assim, sua carteira não depende de um único mercado para funcionar bem."
+    },
+    {
+      "numero": 4,
+      "conteudo_visual": "Três barras de risco, conservador, moderado e arrojado, ao lado de ampulhetas de curto, médio e longo prazo.",
+      "prompt_imagem": "Create a colorful flat 2D educational infographic on a pure #FFFFFF full-bleed background, vertical 9:16. Stack three risk gauges labeled exactly 'CONSERVADOR', 'MODERADO', 'ARROJADO', colored green, blue and orange. Beside or below them place three simple hourglass icons labeled 'CURTO PRAZO', 'MÉDIO PRAZO', 'LONGO PRAZO'. Use a clean mobile-friendly hierarchy, friendly vector shapes, generous spacing, no physical board, no shadows, no English text.",
+      "prompt_video": "Animate the three risk gauges filling gradually from CONSERVADOR to MODERADO to ARROJADO, then rotate the three hourglasses and reveal CURTO PRAZO, MÉDIO PRAZO and LONGO PRAZO. Colorful flat vector animation on fixed pure white, vertical 9:16, clear Portuguese labels.",
+      "narracao": "A proporção de cada classe depende do seu perfil e horizonte. Dinheiro com uso próximo pede mais estabilidade; objetivos distantes permitem aceitar mais oscilação."
+    },
+    {
+      "numero": 5,
+      "conteudo_visual": "Uma carteira circular sendo rebalanceada, com setas, um calendário anual e os dizeres REVISAR e REBALANCEAR.",
+      "prompt_imagem": "Create a colorful flat 2D educational illustration on a pure #FFFFFF full-bleed background, vertical 9:16. Show a circular portfolio chart with four colored segments and two curved arrows rebalancing them. Add a calendar with a check mark and the exact Brazilian Portuguese words 'REVISAR' and 'REBALANCEAR'. At the bottom show the phrase 'CONSTÂNCIA VENCE A PRESSA'. Clean modern vector art, blue green orange purple palette, mobile-safe spacing, no scene, no board, no frame, no English text.",
+      "prompt_video": "Animate the circular portfolio chart assembling, then rotate two curved arrows to rebalance the colored segments. Make the calendar check mark draw itself, reveal REVISAR and REBALANCEAR, and finish with CONSTÂNCIA VENCE A PRESSA. Smooth positive flat 2D animation over fixed pure white, vertical 9:16.",
+      "narracao": "Por fim, revise a carteira periodicamente e rebalanceie quando os percentuais se afastarem do plano. Evite mudar tudo por notícias do dia: consistência costuma vencer a pressa."
+    }
+  ]
+}

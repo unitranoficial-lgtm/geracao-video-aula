@@ -1,0 +1,47 @@
+{
+  "titulo": "Como montar uma carteira de investimentos inteligente",
+  "assunto": "Passos práticos para organizar uma carteira de investimentos por objetivos, prazo e risco",
+  "estilo": "animacao_2d",
+  "voz_elevenlabs": "Davi Andrei (2CECaLAGTS5NRGxgbcxr)",
+  "duracao_estimada_minutos": 0.9,
+  "num_takes": 5,
+  "descricao_imagem_coringa": "Fundo digital branco puro, uniforme e vazio.",
+  "prompt_imagem_coringa": "Uniform pure #FFFFFF full-screen background filling every pixel of a vertical 9:16 image. No objects, text, frame, board, shadows or texture.",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Pessoa organizando objetivos financeiros em três caixas de prazo.",
+      "prompt_imagem": "Colorful flat 2D educational illustration on a pure #FFFFFF full-bleed background, vertical 9:16. A friendly Brazilian investor organizes three goal boxes connected to a wallet. Exact Brazilian Portuguese title: 'CARTEIRA INTELIGENTE'. Exact labels: 'CURTO PRAZO', 'MÉDIO PRAZO', 'LONGO PRAZO'. Clean modern vector design, blue green orange palette, mobile safe margins, no English text, no physical board, frame, scenery, shadows or texture.",
+      "prompt_video": "Animate the investor sorting goal cards into three boxes. Reveal the exact Portuguese title CARTEIRA INTELIGENTE and labels CURTO PRAZO, MÉDIO PRAZO, LONGO PRAZO. Smooth colorful flat 2D explainer motion on a fixed pure white background, vertical 9:16.",
+      "narracao": "Uma carteira inteligente não começa escolhendo o investimento da moda. Começa definindo objetivos: quanto você precisa, em quanto tempo e para qual finalidade. Separe metas de curto, médio e longo prazo."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "Escudo de reserva de emergência protegendo despesas mensais.",
+      "prompt_imagem": "Colorful flat 2D infographic on pure #FFFFFF full-bleed background, vertical 9:16. A strong green shield protects six monthly expense icons and a liquid savings jar. Exact Brazilian Portuguese title: 'RESERVA PRIMEIRO'. Exact labels: '6 A 12 MESES', 'BAIXO RISCO', 'LIQUIDEZ DIÁRIA'. Friendly clean vector art, high mobile readability, no English text, no physical board or frame.",
+      "prompt_video": "Animate six monthly expense icons entering a protective green shield, then the savings jar fills. Reveal RESERVA PRIMEIRO, 6 A 12 MESES, BAIXO RISCO and LIQUIDEZ DIÁRIA. Fixed pure white background, vertical 9:16.",
+      "narracao": "Antes de buscar mais retorno, monte sua reserva de emergência. Como esse dinheiro pode ser necessário a qualquer momento, priorize baixo risco, liquidez diária e ausência de carência."
+    },
+    {
+      "numero": 3,
+      "conteudo_visual": "Balança ajustando risco, liquidez e rentabilidade ao perfil do investidor.",
+      "prompt_imagem": "Colorful flat 2D educational illustration on pure #FFFFFF full-bleed background, vertical 9:16. Show an investor profile dial with three positions and a balanced triangle. Exact Brazilian Portuguese title: 'RESPEITE SEU PERFIL'. Exact labels around the triangle: 'RISCO', 'LIQUIDEZ', 'RENTABILIDADE'. Add exact small labels: 'CONSERVADOR', 'MODERADO', 'ARROJADO'. Clean blue green yellow vector design, no English text, no board or frame.",
+      "prompt_video": "Animate the profile dial moving through CONSERVADOR, MODERADO and ARROJADO, then balance the triangle labeled RISCO, LIQUIDEZ and RENTABILIDADE. Reveal RESPEITE SEU PERFIL. Smooth flat vector animation on fixed pure white, vertical 9:16.",
+      "narracao": "Depois, respeite seu perfil de investidor. Uma boa carteira equilibra risco, liquidez e rentabilidade de acordo com sua capacidade e sua disposição para enfrentar oscilações."
+    },
+    {
+      "numero": 4,
+      "conteudo_visual": "Cesta diversificada com classes de ativos, sem percentuais prescritos.",
+      "prompt_imagem": "Colorful flat 2D portfolio infographic on pure #FFFFFF full-bleed background, vertical 9:16. Show one investment basket divided into several distinct colored sections with simple icons. Exact Brazilian Portuguese title: 'DIVERSIFIQUE'. Exact labels: 'RENDA FIXA', 'AÇÕES', 'FUNDOS', 'EXTERIOR'. Add exact phrase: 'NÃO CONCENTRE TUDO'. Clean modern vector art, clear spacing, no percentages, no English text, no physical board or frame.",
+      "prompt_video": "Animate money being distributed across the sections RENDA FIXA, AÇÕES, FUNDOS and EXTERIOR, then show a concentration warning disappearing. Reveal DIVERSIFIQUE and NÃO CONCENTRE TUDO. Colorful smooth 2D motion on fixed pure white, vertical 9:16.",
+      "narracao": "Diversifique entre ativos que se comportam de maneiras diferentes. Evite concentrar todo o patrimônio em uma empresa, setor ou tipo de investimento. A divisão ideal depende das suas metas e do seu perfil."
+    },
+    {
+      "numero": 5,
+      "conteudo_visual": "Calendário de aportes, gráfico de rebalanceamento e checklist anual.",
+      "prompt_imagem": "Colorful flat 2D educational illustration on pure #FFFFFF full-bleed background, vertical 9:16. Show a recurring contribution calendar, a portfolio pie chart being rebalanced and an annual review checklist. Exact Brazilian Portuguese title: 'APORTE E REVISE'. Exact labels: 'TODO MÊS', 'REBALANCEIE', 'REVISE AS METAS'. Add exact callout: 'CONSISTÊNCIA VENCE A PRESSA'. Clean trustworthy blue green orange vector design, mobile safe margins, no English text, no board or frame.",
+      "prompt_video": "Animate monthly contributions entering the portfolio, the pie chart returning to balance, and the annual checklist being completed. Reveal APORTE E REVISE, TODO MÊS, REBALANCEIE, REVISE AS METAS and CONSISTÊNCIA VENCE A PRESSA. Smooth colorful flat 2D animation on pure white, vertical 9:16.",
+      "narracao": "Por fim, faça aportes regulares e rebalanceie a carteira quando a distribuição se afastar do plano ou seus objetivos mudarem. Consistência e revisão periódica costumam valer mais que tentar adivinhar o mercado."
+    }
+  ]
+}

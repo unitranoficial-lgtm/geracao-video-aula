@@ -1,0 +1,26 @@
+{
+  "titulo": "Tacógrafo no TRC",
+  "assunto": "O que o tacógrafo registra e por que é obrigatório no transporte rodoviário de cargas",
+  "estilo": "quadro_negro_simples",
+  "voz_elevenlabs": "Elvis - Resonating, Deep and Engaging",
+  "duracao_estimada_segundos": 20,
+  "num_takes": 2,
+  "descricao_imagem_coringa": "Quadro negro completamente vazio, fundo preto puro, sem elementos, sem texto, sem desenhos — lousa em branco",
+  "prompt_imagem_coringa": "Lousa escolar vazia, fundo verde-escuro sem marcas, quadro negro completamente limpo sem texto nem desenhos, textura de lousa de sala de aula, proporção 16:9",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Ícone de tacógrafo (mostrador circular) no centro, três setas apontando para fora: velocímetro à esquerda, relógio em cima, ícone de pausa à direita — tudo em giz branco sobre fundo negro",
+      "prompt_imagem": "Dark green chalkboard background, classroom chalkboard texture, 16:9 aspect ratio — IDENTICAL background to reference image. Added ONLY in the center: white chalk line drawing of a circular tachograph device in the center, with three arrows pointing outward: left arrow to a speedometer icon labeled 'Velocidade', top arrow to a clock icon labeled 'Tempo', right arrow to a pause symbol labeled 'Paradas'. Thin white chalk outlines only, no color fills, rough chalk texture on lines, educational blackboard doodle style.",
+      "prompt_video": "On pure black chalkboard: circular tachograph device draws itself in chalk in the center, then three arrows draw themselves outward, then speedometer icon appears at left with label, clock icon appears at top with label, pause symbol appears at right with label — each element draws itself progressively as if written by invisible chalk, no camera movement, static frame, blackboard chalk animation style, 16:9",
+      "narracao": "O tacógrafo é equipamento obrigatório em caminhões com mais de três toneladas. Ele registra a velocidade, o tempo de direção e as paradas do motorista ao longo da viagem."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "À esquerda: ícone de inspetor com lupa sobre um disco de tacógrafo. À direita: ícone de caminhão com X vermelho e texto 'Multa + retenção'. Linha divisória no centro. Abaixo: texto 'ANTT fiscaliza' — tudo em giz branco sobre fundo negro",
+      "prompt_imagem": "Dark green chalkboard background, classroom chalkboard texture, 16:9 aspect ratio — IDENTICAL background to reference image. Added ONLY: white chalk line drawing split by a vertical line — left side: inspector figure with magnifying glass over a tachograph disc; right side: truck icon with large X and text 'Multa e retencao' below; at the bottom center a horizontal line and text 'ANTT fiscaliza'. Thin white chalk outlines only, rough chalk texture on lines, educational blackboard doodle style.",
+      "prompt_video": "On pure black chalkboard: a vertical dividing line draws itself in the center; on the left, inspector figure draws itself with magnifying glass, then a tachograph disc appears below it; on the right, truck icon draws itself then a large X and warning text appear; finally at the bottom a horizontal line draws itself and 'ANTT fiscaliza' writes itself in chalk; all elements appear progressively, no camera movement, static frame, blackboard chalk animation style, 16:9",
+      "narracao": "Na fiscalização da ANTT, os dados do tacógrafo são verificados. Motorista sem o equipamento, ou com dados adulterados, sujeita o veículo à retenção e recebe multa de infração gravíssima."
+    }
+  ]
+}

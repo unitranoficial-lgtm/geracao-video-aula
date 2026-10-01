@@ -1,0 +1,33 @@
+{
+  "titulo": "Quanto Vale Sua Hora?",
+  "assunto": "Como o trabalhador autônomo deve calcular e valorizar o seu custo por hora",
+  "estilo": "quadro_branco",
+  "voz_elevenlabs": "Elvis - Resonating, Deep and Engaging",
+  "duracao_estimada_segundos": 30,
+  "num_takes": 3,
+  "descricao_imagem_coringa": "Quadro branco completamente vazio, fundo branco puro, sem elementos, sem texto, sem desenhos",
+  "prompt_imagem_coringa": "Clean white whiteboard, empty, no text, no elements, pure white background, educational classroom setting, 16:9 aspect ratio",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "No centro do quadro: um relógio grande com um ponto de interrogação dentro. Em volta, moedas espalhadas de forma desorganizada. No topo: 'QUANTO VALE SUA HORA?' em letras grandes. Abaixo do relógio: '??' em destaque.",
+      "prompt_imagem": "Clean white whiteboard background, 16:9 aspect ratio, flat educational illustration style. Bold title 'QUANTO VALE SUA HORA?' at the top in dark marker. In the center, a large clock drawing with a question mark inside the clock face. Around the clock, scattered coin drawings in a disorganized pattern. Below the clock, large bold '??' drawn in marker. Simple clean lines, whiteboard marker drawing style.",
+      "prompt_video": "On white whiteboard: the title 'QUANTO VALE SUA HORA?' draws itself at the top; then a large clock outline appears in the center with a question mark drawing itself inside it; scattered coins draw themselves around the clock one by one; finally '??' appears below — each element fades or draws in progressively, no camera movement, static frame, whiteboard animation style, 16:9",
+      "narracao": "Você sabe quanto vale uma hora do seu trabalho? A maioria das pessoas nunca parou para calcular. Mas quem não sabe seu valor, acaba aceitando qualquer coisa."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "No quadro, uma fórmula clara em destaque: 'RECEITA MENSAL ÷ HORAS TRABALHADAS = CUSTO/HORA'. Abaixo, um exemplo: 'R$5.000 ÷ 200h = R$25/h'. Uma seta aponta para o resultado com o texto 'SEU MÍNIMO' circulado.",
+      "prompt_imagem": "Clean white whiteboard background, 16:9 aspect ratio, flat educational illustration style. Large formula written in marker: 'RECEITA MENSAL ÷ HORAS TRABALHADAS = CUSTO/HORA'. Below it, a numeric example: 'R$5.000 ÷ 200h = R$25/h'. An arrow pointing to the result with the text 'SEU MINIMO' written in a circle. Clean bold marker lines, whiteboard drawing style.",
+      "prompt_video": "On white whiteboard: the formula 'RECEITA MENSAL ÷ HORAS TRABALHADAS = CUSTO/HORA' writes itself step by step; then the example 'R$5.000 ÷ 200h = R$25/h' writes itself below; an arrow draws itself pointing to the result; a circle draws itself around 'SEU MINIMO' — each element appears progressively as if written by a marker, no camera movement, static frame, whiteboard animation style, 16:9",
+      "narracao": "O cálculo é simples: pegue o que você recebe no mês e divida pelas horas que você trabalha. Esse resultado é seu custo mínimo por hora. Cobrar abaixo disso significa trabalhar no prejuízo."
+    },
+    {
+      "numero": 3,
+      "conteudo_visual": "O quadro mostra duas colunas: à esquerda 'SEM SABER' com ícone de pessoa confusa e seta para baixo. À direita 'SABENDO SEU VALOR' com ícone de pessoa confiante, seta para cima e estrela. No centro uma linha divisória vertical. Na base do quadro: 'VOCÊ QUE DECIDE' sublinhado.",
+      "prompt_imagem": "Clean white whiteboard background, 16:9 aspect ratio, flat educational illustration style. Two-column layout divided by a vertical line. Left column labeled 'SEM SABER' with a simple confused person stick figure and a downward arrow. Right column labeled 'SABENDO SEU VALOR' with a confident stick figure, upward arrow, and a star. At the bottom center, underlined text: 'VOCE QUE DECIDE'. Bold marker lines, whiteboard drawing style.",
+      "prompt_video": "On white whiteboard: a vertical dividing line draws itself down the center; on the left 'SEM SABER' writes itself with a confused stick figure and downward arrow appearing; on the right 'SABENDO SEU VALOR' writes itself with a confident stick figure, upward arrow, and star appearing; finally 'VOCE QUE DECIDE' writes itself at the bottom and gets underlined — each element appears progressively as if drawn by a marker, no camera movement, static frame, whiteboard animation style, 16:9",
+      "narracao": "Conhecer seu valor muda tudo. Você negocia melhor, recusa o que não compensa e cresce com consciência. Calcule sua hora agora. Você que decide."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "titulo": "Markup vs. Margem: Você Está Calculando Errado?",
+  "assunto": "Diferença entre markup e margem de lucro — erro clássico de precificação em pequenos negócios",
+  "estilo": "quadro_branco",
+  "voz_elevenlabs": "Elvis - Resonating, Deep and Engaging",
+  "duracao_estimada_segundos": 32,
+  "num_takes": 3,
+  "descricao_imagem_coringa": "Quadro branco completamente vazio, fundo branco puro, sem elementos, sem texto, sem desenhos",
+  "prompt_imagem_coringa": "Clean white art canvas, blank and ready to be drawn on. Flat front view, minimal, solid white. Digital graphic design asset, 16:9 aspect ratio.",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Título 'MARKUP vs MARGEM?' no topo. No centro, um boneco palito confuso com um ponto de interrogação grande acima da cabeça. Ao redor, moedas espalhadas e uma seta apontando para baixo com 'PREJUÍZO?'",
+      "prompt_imagem": "White background with hand-drawn marker illustrations: bold title 'MARKUP vs MARGEM?' at the top. In the center, a simple confused stick figure with a large question mark above its head. Around the stick figure, scattered coin drawings and a downward arrow labeled 'PREJUIZO?' in dark marker. Flat educational whiteboard illustration style, clean black marker lines on white, 16:9 aspect ratio.",
+      "prompt_video": "On the whiteboard surface only: the title 'MARKUP vs MARGEM?' writes itself at the top; then a confused stick figure draws itself in the center with a question mark appearing above it; scattered coins and a downward arrow with 'PREJUIZO?' draw themselves progressively. Static frame, no camera movement, whiteboard animation style, 16:9.",
+      "narracao": "Você já achou que estava lucrando e no fim ficou no prejuízo? Isso pode ser consequência de uma confusão muito comum: markup versus margem."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "Lado esquerdo: 'MARKUP' com fórmula 'LUCRO ÷ CUSTO' e resultado '50%'. Lado direito: 'MARGEM' com fórmula 'LUCRO ÷ PREÇO' e resultado '33%'. No topo: exemplo 'Comprou R$100 → Vendeu R$150 (lucro R$50)'. Linha divisória vertical no centro.",
+      "prompt_imagem": "White background with hand-drawn marker illustrations: vertical dividing line down the center. At the top: 'Comprou R$100 → Vendeu R$150 (lucro R$50)'. Left half labeled 'MARKUP' with formula 'LUCRO ÷ CUSTO = 50%' in bold marker. Right half labeled 'MARGEM' with formula 'LUCRO ÷ PRECO = 33%' in bold marker. Flat educational whiteboard illustration style, clean black marker lines on white, 16:9 aspect ratio.",
+      "prompt_video": "On the whiteboard surface only: the example 'Comprou R$100 → Vendeu R$150 (lucro R$50)' writes itself at the top; a vertical line draws itself down the center; 'MARKUP' and its formula 'LUCRO ÷ CUSTO = 50%' write themselves on the left; 'MARGEM' and its formula 'LUCRO ÷ PRECO = 33%' write themselves on the right — each element appears progressively as if drawn by a marker. Static frame, whiteboard animation style, 16:9.",
+      "narracao": "Markup é calculado sobre o custo: comprou por cem e vendeu por cento e cinquenta, markup de cinquenta por cento. Mas a margem é calculada sobre o preço de venda: esses mesmos cinquenta reais representam apenas trinta e três por cento."
+    },
+    {
+      "numero": 3,
+      "conteudo_visual": "Duas colunas: esquerda 'MARKUP ERRADO' com X vermelho e seta para baixo. Direita 'MARGEM CERTA' com check e seta para cima. Na base: 'CALCULE CERTO' e abaixo 'VOCÊ QUE DECIDE' sublinhado.",
+      "prompt_imagem": "White background with hand-drawn marker illustrations: two columns divided by a vertical line. Left column labeled 'MARKUP ERRADO' with a large X and downward arrow in marker. Right column labeled 'MARGEM CERTA' with a checkmark and upward arrow in marker. At the bottom center: 'CALCULE CERTO' and below it 'VOCE QUE DECIDE' underlined in bold marker. Flat educational whiteboard illustration style, clean black marker lines on white, 16:9 aspect ratio.",
+      "prompt_video": "On the whiteboard surface only: a vertical dividing line draws itself; 'MARKUP ERRADO' with an X and downward arrow appear on the left; 'MARGEM CERTA' with a checkmark and upward arrow appear on the right; 'CALCULE CERTO' writes itself at the bottom, then 'VOCE QUE DECIDE' writes itself below it and gets underlined. Static frame, whiteboard animation style, 16:9.",
+      "narracao": "Confundir os dois faz você precificar errado e trabalhar no prejuízo sem perceber. Entenda seus números. Calcule certo. Você que decide."
+    }
+  ]
+}

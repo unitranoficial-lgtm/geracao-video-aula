@@ -1,0 +1,33 @@
+{
+  "titulo": "Seguros Obrigatórios no TRC",
+  "assunto": "Seguros obrigatórios no Transporte Rodoviário de Cargas — RCTR-C e RCF-DC",
+  "estilo": "quadro_branco_simples",
+  "voz_elevenlabs": "Elvis - Resonating, Deep and Engaging",
+  "duracao_estimada_segundos": 30,
+  "num_takes": 3,
+  "descricao_imagem_coringa": "Fundo completamente branco, sem elementos, sem texto, sem desenhos — tela em branco pura",
+  "prompt_imagem_coringa": "Completely blank white canvas, clean pure white background, no elements, no text, no drawings, flat white surface, 16:9 aspect ratio",
+  "takes": [
+    {
+      "numero": 1,
+      "conteudo_visual": "Ícone de caminhão com caixa de carga no centro, escudo de proteção aparecendo ao lado, rótulo 'RCTR-C' abaixo — desenho de linha simples em preto sobre fundo branco",
+      "prompt_imagem": "Completely blank white canvas, clean pure white background, flat white surface, 16:9 aspect ratio — IDENTICAL background to reference image. Added ONLY in the center: simple black line drawing of a minimalist truck icon with cargo box, a shield symbol beside it, text 'RCTR-C' in plain black letters below. Thin black outlines only, no color fills, no shading, no background elements, pure white everywhere except the drawing, educational doodle style.",
+      "prompt_video": "On clean white background: simple black line truck drawing appears progressively, then cargo box draws itself inside, then shield symbol draws itself beside the truck, then 'RCTR-C' text writes itself below, each element appears as if drawn by invisible pen, smooth line-by-line animation, no camera movement, static frame, doodle whiteboard style, 16:9",
+      "narracao": "No Transporte Rodoviário de Cargas, o RCTR-C é o seguro obrigatório por lei. Ele cobre os danos causados à carga do seu cliente durante o transporte — seja por acidente, incêndio ou roubo com violência."
+    },
+    {
+      "numero": 2,
+      "conteudo_visual": "Três ícones lado a lado sobre fundo branco: carro batido (acidente), chama de fogo, figura com arma (roubo com violência) — todos com check verde. Abaixo, ícone de ladrão sem arma com X vermelho e texto 'Furto simples: NÃO coberto'. Linha divisória separando as duas áreas.",
+      "prompt_imagem": "Completely blank white canvas, clean pure white background, flat white surface, 16:9 aspect ratio — IDENTICAL background to reference image. Added ONLY in the center: simple black line drawing of three icons in a row (crashed car, flame, armed figure) each with a checkmark below; a horizontal dividing line below them; then a thief figure (no weapon) with a large X mark and text 'Furto simples: NAO coberto'. Thin black outlines only, no color fills, no shading, pure white everywhere except the drawing, educational doodle style.",
+      "prompt_video": "On clean white background: three icons draw themselves one by one — crashed car, flame, armed figure — each with a checkmark appearing below it; then a horizontal line draws itself dividing the frame; below it, a thief figure draws itself and a large X appears beside text 'Furto simples: NAO coberto'; all elements appear progressively as if drawn by invisible pen, no camera movement, static frame, doodle whiteboard style, 16:9",
+      "narracao": "O RCTR-C cobre acidente, incêndio e roubo com violência. Mas atenção: furto simples, sem violência, não está coberto pelo seguro obrigatório. Para essa proteção adicional, existe o RCF-DC, que é contratado separadamente."
+    },
+    {
+      "numero": 3,
+      "conteudo_visual": "Dois blocos lado a lado: à esquerda, caminhão com X vermelho e texto 'Sem seguro: multa + apreensão'; à direita, caminhão com checkmark verde e texto 'Com RCTR-C: viagem regular'. Abaixo dos dois blocos, texto 'Contrate antes de cada viagem' com seta apontando para os dois lados.",
+      "prompt_imagem": "Completely blank white canvas, clean pure white background, flat white surface, 16:9 aspect ratio — IDENTICAL background to reference image. Added ONLY in the center: simple black line drawing of two side-by-side panels with a vertical divider — left panel: truck icon with large X and text 'Sem seguro: multa e apreensao'; right panel: truck icon with checkmark and text 'Com RCTR-C: viagem regular'; below both a horizontal line and text 'Contrate antes de cada viagem'. Thin black outlines only, no color fills, no shading, pure white everywhere except the drawing, educational doodle style.",
+      "prompt_video": "On clean white background: a vertical dividing line draws itself in the center; on the left, truck icon draws itself then a large X appears with warning text below; on the right, truck icon draws itself then a checkmark appears with approval text below; finally at the bottom a horizontal line draws itself and 'Contrate antes de cada viagem' text writes itself; all elements appear progressively, no camera movement, static frame, doodle whiteboard animation style, 16:9",
+      "narracao": "Transportar sem o RCTR-C é infração grave: o veículo pode ser multado e apreendido na fiscalização. Contrate o seguro antes de cada viagem em uma seguradora credenciada pela SUSEP. É obrigação legal e proteção para você e seu cliente."
+    }
+  ]
+}

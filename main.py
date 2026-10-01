@@ -22,10 +22,10 @@ load_dotenv()
 console = Console()
 
 
-def cmd_gerar_roteiro(input_texto: str) -> None:
+def cmd_gerar_roteiro(input_texto: str, aspect_ratio: str = "16:9") -> None:
     from src.roteiro import gerar_roteiro, exibir_roteiro, salvar_roteiro
 
-    roteiro = gerar_roteiro(input_texto)
+    roteiro = gerar_roteiro(input_texto, aspect_ratio=aspect_ratio)
     exibir_roteiro(roteiro)
 
     if not Confirm.ask("\n[bold yellow]Aprovar este roteiro?[/bold yellow]"):

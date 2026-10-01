@@ -1,0 +1,59 @@
+{
+  "project_id": "43f80954-b3a2-4f59-b45a-ed66c91afab1",
+  "takes": {
+    "1": {
+      "card_id": "https://flow.google.com/asb/AB-nOUbLLXuXnCFWCbyyGXyByu0eSELFp81YWp-C8P_4atd-SRHXFU6rExSBquWIHBm5XnnDvt5SX1qrCeGsqaE-vueG5VMMqDCey15GqJ6ebEBPWIcchFrNP_DESs8Ov9QaUwsy1hQgSxEl0uu0iGmVe8RRpmFRyx2QseLhlm-Ykw",
+      "title": "Drawing blue building share cert…",
+      "md5": "00c8b1cbb49041de79b90b5694cc8912",
+      "bytes": 978493
+    },
+    "2": {
+      "card_id": "https://flow.google.com/asb/AB-nOUYt4Ai2M0eB86V6zarQyqNH0TKe1tpGMhJ1QxxXL_9ujlge6wb_v-rjicLGyOtZbCRyIp_-ulbAq991d0xgoTpDBpltr3ZDt_o322gYuqouceTIxnN0aX3j9g2QImJ9j7KzZEbFwoAL0bD1-doGTVv2vqegWE-bp5c4kCByfw",
+      "title": "Animating investor transactions …",
+      "md5": "09bcf6cb786ca1b99051a8849e678fc6",
+      "bytes": 1480647
+    },
+    "3": {
+      "card_id": "https://flow.google.com/asb/AB-nOUaf7kQRYxMfm3b4C9Mra0-jcit86ewaZ9zzomqQ4JX44LoTLmDCx77LJ9WNmwopjJH2yUOfgUcRWJ_zStFXK1QQutiwpoQMBnmWjoWe6l8IIyDHsG1FAfBvLYZkliBRYpqdfvEyX3ZmvPKxO_r8EKuaHYIuwBflQrO1PbhEWg",
+      "title": "Drawing investor brokerage and e…",
+      "md5": "71eb1de925fb34f9153b0b1fe1ae8d16",
+      "bytes": 946946
+    },
+    "6": {
+      "card_id": "https://flow.google.com/asb/AB-nOUYI6Dzq9ExkMr1adNArLjXF3vZAJQLa9DOAN6BNyb-_K7auFMIjrmGGK8VZbD3HReY4CRklLWhP1658VPeovOFsFkiAf7-azb6r34s5i9tYzGeG8F6IM2l7nDav4CCOU2KVDUNl0o1m-ecfY7C9HLexOOjiFZGK-TzU39gx",
+      "title": "Animating financial icons around…",
+      "md5": "8e54edbe60332db99d100d8c485762c9",
+      "bytes": 1065350
+    },
+    "7": {
+      "card_id": "https://flow.google.com/asb/AB-nOUaLOMfJs2A-bTDpUx3pvmTSBDslPLv7vXOTYuAsNTnOXmO8X8ctgMEoXl3sKrvkYugp0rGZ1AdOjh8AwBKgk-LUXduxuBWc5IMY6iKEafftv8036Vc7en3IxZo1e6TWLLdWEuzT1P0-3v4pvw2sJ1yg4p2GJ93yr28FCpsWNg",
+      "title": "Icons entering investment basket…",
+      "md5": "d6226f38af0579d46b421997906aa120",
+      "bytes": 1088502
+    },
+    "8": {
+      "card_id": "https://flow.google.com/asb/AB-nOUZjfq3uN-_aUVi_TAPBI-GMWJ9jslVgBHEE9lkt3IFRkDu1xqnNmiFGhm0r5w7LvG0qEy5IMig0kJrtFv4GfjvtJwLo38208S33gqVgjiZSudsIwslArhTtc7iZAuqPte7FH_NLid3meEnUbVRQ6syc_vEEO_Bfi_gxToIW",
+      "title": "Animating checklist icons with c…",
+      "md5": "6f121b268acb0cd1dd6ced3c0203a37d",
+      "bytes": 893450
+    },
+    "9": {
+      "card_id": "https://flow.google.com/asb/AB-nOUYETF-ANiIMl2Ggwje0WscC5ufd72Z9EstpjIBpmcXV3p3tCVAWhPeFk45idSkRXKN_Z8MHhpwZQP_u7nzSkArguVeltkOZTEm9uCphWhx4B2UK04XvV8FsNY8DBs9lNZ0Iz51rqADNuJ1GzyeaUl8XJdLuU7zpSBEPg7DHbw",
+      "title": "Drawing financial network connec…",
+      "md5": "3365654b89e25bb858b50ad0018d245e",
+      "bytes": 969457
+    },
+    "4": {
+      "card_id": "https://flow.google.com/asb/AB-nOUaXnJmRfAhIoRXr7Y4wSzibzPug3VZUKp-D4dJo3vDgVeYqbeFx7N4nUxyBZK1b8WH4TuncfjbGwTFjVORzHHfmcNyQM31Pwl3GjrCfHaxGpaNV1GiTYpQSsReqbowfsGaRjjqazWJLvEX6TW-qaChvwvV76X-2OTWHFtkUIA",
+      "title": "Orders moving on balance scale",
+      "md5": "0538682005db76d2e753bac4df6751b6",
+      "bytes": 1814449
+    },
+    "5": {
+      "card_id": "https://flow.google.com/asb/AB-nOUb6pTirr65H49A2fNBXN_YpCXp0AetC7yJ9opfc2fACrMqgjkOyxgVaUL02fhwtG5DNeb2IWw3CU6v-clJlMOa_i-XWCtesAK9qfVsht62AGF46hKpK0NMt-Kb0_GxUvT1BBUfvnaV1Aixy2rJjxsEK7ocVT6FKU2HuVAu9jg",
+      "title": "Drawing dividend chart animation",
+      "md5": "46121a10aabd5835948ae34a74a2170f",
+      "bytes": 1213901
+    }
+  }
+}
